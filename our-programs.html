@@ -1,0 +1,2362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Our Programs | Mugaward Way Up Foundation</title>
+
+<meta name="description" content="Explore Mugaward Way Up Foundation programs connecting food production, urban demand and inclusive finance through practical community-based systems.">
+
+<meta name="theme-color" content="#123f32">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================================================
+   MUGAWARD WAY UP FOUNDATION
+   OUR PROGRAMS — PREMIUM PROGRAMS PAGE
+   ========================================================= */
+
+:root{
+  --green:#26bd21;
+  --green-dark:#123f32;
+  --green-deep:#0b2c25;
+  --ink:#182a2a;
+  --muted:#667574;
+  --cream:#f7f4ed;
+  --paper:#ffffff;
+  --soft:#eef5f1;
+  --line:rgba(18,63,50,.13);
+  --gold:#d9b56d;
+  --shadow:0 24px 70px rgba(15,48,40,.11);
+  --radius:24px;
+  --max:1180px;
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  background:#fff;
+  color:var(--ink);
+  font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  line-height:1.7;
+  overflow-x:hidden;
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+button{
+  font-family:inherit;
+}
+
+.container{
+  width:min(calc(100% - 40px),var(--max));
+  margin:auto;
+}
+
+
+/* =========================================================
+   TOP BAR
+   ========================================================= */
+
+.topbar{
+  background:var(--green-deep);
+  color:#fff;
+  text-align:center;
+  padding:8px 20px;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.5px;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(255,255,255,.96);
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid rgba(18,63,50,.08);
+}
+
+.nav-wrap{
+  width:min(calc(100% - 40px),var(--max));
+  min-height:82px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  flex-shrink:0;
+}
+
+.brand img{
+  width:150px;
+  height:72px;
+  object-fit:contain;
+}
+
+#navlinks{
+  display:flex;
+  align-items:center;
+  gap:4px;
+}
+
+#navlinks a{
+  position:relative;
+  padding:11px 14px;
+  border-radius:12px;
+  color:var(--green-dark);
+  font-size:13px;
+  font-weight:750;
+  transition:.25s ease;
+}
+
+#navlinks a:hover{
+  background:var(--soft);
+}
+
+#navlinks a.active{
+  background:#edf7ed;
+}
+
+#navlinks a.active:after{
+  content:"";
+  position:absolute;
+  left:14px;
+  right:14px;
+  bottom:5px;
+  height:3px;
+  background:var(--green);
+  border-radius:20px;
+}
+
+#navlinks .nav-donate{
+  background:var(--green);
+  color:#fff;
+  padding:12px 19px;
+  margin-left:5px;
+  box-shadow:0 8px 25px rgba(38,189,33,.16);
+}
+
+#navlinks .nav-donate:hover{
+  background:#20a91c;
+  color:#fff;
+  transform:translateY(-2px);
+}
+
+#menuBtn{
+  display:none;
+  width:44px;
+  height:44px;
+  border:0;
+  border-radius:13px;
+  background:var(--green-dark);
+  color:#fff;
+  font-size:22px;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+}
+
+
+/* =========================================================
+   PROGRAM HERO
+   ========================================================= */
+
+.program-hero{
+  position:relative;
+  overflow:hidden;
+  background:var(--green-deep);
+  color:#fff;
+  padding:110px 0 95px;
+}
+
+.program-hero:before{
+  content:"PROGRAMS";
+  position:absolute;
+  right:-50px;
+  top:40px;
+  color:rgba(255,255,255,.025);
+  font-size:150px;
+  font-weight:900;
+  letter-spacing:-10px;
+  line-height:1;
+}
+
+.program-hero:after{
+  content:"";
+  position:absolute;
+  width:420px;
+  height:420px;
+  right:-160px;
+  bottom:-230px;
+  border-radius:50%;
+  border:1px solid rgba(38,189,33,.2);
+  box-shadow:
+    0 0 0 70px rgba(38,189,33,.025),
+    0 0 0 140px rgba(38,189,33,.018);
+}
+
+.program-hero-inner{
+  position:relative;
+  z-index:2;
+  max-width:950px;
+}
+
+.hero-kicker{
+  display:flex;
+  align-items:center;
+  gap:13px;
+  color:#aee9aa;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  margin-bottom:28px;
+}
+
+.hero-kicker:before{
+  content:"";
+  width:42px;
+  height:3px;
+  border-radius:20px;
+  background:var(--green);
+}
+
+.program-hero h1{
+  max-width:950px;
+  font-size:clamp(48px,7vw,82px);
+  line-height:.98;
+  letter-spacing:-5px;
+  font-weight:900;
+  margin-bottom:30px;
+}
+
+.program-hero h1 span{
+  color:#aee9aa;
+}
+
+.hero-intro{
+  max-width:760px;
+  color:rgba(255,255,255,.68);
+  font-size:18px;
+  line-height:1.85;
+}
+
+.hero-links{
+  margin-top:50px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.hero-link{
+  border:1px solid rgba(255,255,255,.15);
+  padding:10px 16px;
+  border-radius:30px;
+  color:rgba(255,255,255,.75);
+  font-size:12px;
+  font-weight:800;
+  transition:.25s ease;
+}
+
+.hero-link:hover{
+  border-color:var(--green);
+  background:rgba(38,189,33,.12);
+  color:#fff;
+}
+
+
+/* =========================================================
+   PROGRAM PATHWAY
+   ========================================================= */
+
+.pathway{
+  padding:90px 0;
+  background:var(--cream);
+}
+
+.pathway-head{
+  max-width:760px;
+  margin-bottom:55px;
+}
+
+.small-label{
+  color:var(--green-dark);
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  margin-bottom:13px;
+}
+
+.pathway-head h2{
+  color:var(--green-dark);
+  font-size:clamp(35px,4vw,54px);
+  line-height:1.06;
+  letter-spacing:-2.2px;
+  margin-bottom:18px;
+}
+
+.pathway-head p{
+  color:var(--muted);
+  font-size:15px;
+}
+
+.pathway-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:2px;
+  background:var(--green-dark);
+}
+
+.pathway-card{
+  background:#fff;
+  padding:38px 32px;
+  min-height:290px;
+  transition:.3s ease;
+}
+
+.pathway-card:hover{
+  background:#f0f8ed;
+}
+
+.pathway-number{
+  color:var(--green);
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:1px;
+  margin-bottom:50px;
+}
+
+.pathway-icon{
+  font-size:27px;
+  margin-bottom:15px;
+}
+
+.pathway-card h3{
+  color:var(--green-dark);
+  font-size:21px;
+  line-height:1.25;
+  margin-bottom:12px;
+}
+
+.pathway-card p{
+  color:var(--muted);
+  font-size:14px;
+}
+
+
+/* =========================================================
+   PROGRAM DETAIL SECTIONS
+   ========================================================= */
+
+.program-detail{
+  padding:105px 0;
+  background:#fff;
+}
+
+.program-detail.alt{
+  background:var(--soft);
+}
+
+.program-detail.dark{
+  background:var(--green-deep);
+  color:#fff;
+}
+
+.program-header{
+  display:grid;
+  grid-template-columns:280px 1fr;
+  gap:70px;
+  margin-bottom:55px;
+}
+
+.program-label{
+  color:var(--green);
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+.program-detail.dark .program-label{
+  color:#aee9aa;
+}
+
+.program-header h2{
+  color:var(--green-dark);
+  font-size:clamp(35px,4vw,55px);
+  line-height:1.05;
+  letter-spacing:-2.5px;
+  margin-bottom:22px;
+}
+
+.program-detail.dark .program-header h2{
+  color:#fff;
+}
+
+.program-header p{
+  color:var(--muted);
+  font-size:16px;
+  line-height:1.85;
+  max-width:760px;
+}
+
+.program-detail.dark .program-header p{
+  color:rgba(255,255,255,.65);
+}
+
+
+/* =========================================================
+   PROGRAM CONTENT GRID
+   ========================================================= */
+
+.detail-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.detail-box{
+  background:var(--cream);
+  padding:34px;
+  border:1px solid var(--line);
+}
+
+.program-detail.alt .detail-box{
+  background:#fff;
+}
+
+.program-detail.dark .detail-box{
+  background:rgba(255,255,255,.055);
+  border-color:rgba(255,255,255,.1);
+}
+
+.detail-box h3{
+  color:var(--green-dark);
+  font-size:18px;
+  margin-bottom:20px;
+}
+
+.program-detail.dark .detail-box h3{
+  color:#fff;
+}
+
+.detail-box ul{
+  list-style:none;
+}
+
+.detail-box li{
+  position:relative;
+  padding:8px 0 8px 24px;
+  color:var(--muted);
+  font-size:14px;
+  border-bottom:1px solid var(--line);
+}
+
+.detail-box li:last-child{
+  border-bottom:0;
+}
+
+.detail-box li:before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:17px;
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:var(--green);
+}
+
+.program-detail.dark .detail-box li{
+  color:rgba(255,255,255,.63);
+  border-bottom-color:rgba(255,255,255,.08);
+}
+
+.outcome{
+  grid-column:1/-1;
+  background:var(--green-dark);
+  padding:38px;
+  color:#fff;
+}
+
+.outcome h3{
+  color:#aee9aa;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  margin-bottom:13px;
+}
+
+.outcome p{
+  color:rgba(255,255,255,.8);
+  font-size:17px;
+  line-height:1.8;
+  max-width:850px;
+}
+
+
+/* =========================================================
+   PROGRAM LINK
+   ========================================================= */
+
+.project-link-wrap{
+  margin-top:35px;
+}
+
+.project-link{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  background:var(--green);
+  color:#fff;
+  padding:13px 19px;
+  border-radius:12px;
+  font-size:12px;
+  font-weight:900;
+  transition:.25s ease;
+}
+
+.project-link:hover{
+  background:var(--green-dark);
+  transform:translateY(-2px);
+}
+
+
+/* =========================================================
+   WHY IT MATTERS
+   ========================================================= */
+
+.why{
+  padding:105px 0;
+  background:var(--cream);
+}
+
+.why-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:80px;
+  align-items:center;
+}
+
+.why-title h2{
+  color:var(--green-dark);
+  font-size:clamp(38px,5vw,62px);
+  line-height:1;
+  letter-spacing:-3px;
+}
+
+.why-title h2 span{
+  color:var(--green);
+}
+
+.why-copy p{
+  color:var(--muted);
+  font-size:15px;
+  margin-bottom:20px;
+}
+
+.why-statement{
+  margin-top:30px;
+  padding:22px 0 0;
+  border-top:1px solid var(--line);
+  color:var(--green-dark);
+  font-size:14px;
+  font-weight:800;
+}
+
+
+/* =========================================================
+   CROSS-CUTTING ENABLERS
+   ========================================================= */
+
+.enablers{
+  padding:105px 0;
+  background:#fff;
+}
+
+.enablers-head{
+  max-width:700px;
+  margin-bottom:55px;
+}
+
+.enablers-head h2{
+  color:var(--green-dark);
+  font-size:clamp(35px,4vw,53px);
+  line-height:1.05;
+  letter-spacing:-2px;
+  margin-bottom:18px;
+}
+
+.enablers-head p{
+  color:var(--muted);
+}
+
+.enabler-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  border-top:1px solid var(--line);
+  border-left:1px solid var(--line);
+}
+
+.enabler{
+  padding:32px 25px;
+  border-right:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+
+.enabler-number{
+  color:var(--green);
+  font-size:11px;
+  font-weight:900;
+  margin-bottom:40px;
+}
+
+.enabler h3{
+  color:var(--green-dark);
+  font-size:18px;
+  margin-bottom:10px;
+}
+
+.enabler p{
+  color:var(--muted);
+  font-size:13px;
+}
+
+
+/* =========================================================
+   QUOTE
+   ========================================================= */
+
+.quote-section{
+  padding:110px 0;
+  background:var(--green-dark);
+  color:#fff;
+}
+
+.quote-inner{
+  max-width:940px;
+  margin:auto;
+  text-align:center;
+}
+
+.quote-mark{
+  color:var(--green);
+  font-family:Georgia,serif;
+  font-size:100px;
+  line-height:.5;
+  margin-bottom:35px;
+}
+
+.quote-inner blockquote{
+  color:#fff;
+  font-size:clamp(30px,4vw,51px);
+  line-height:1.2;
+  letter-spacing:-2px;
+  font-weight:800;
+}
+
+.quote-inner cite{
+  display:block;
+  margin-top:30px;
+  color:#aee9aa;
+  font-style:normal;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+
+/* =========================================================
+   SCALE / PILOT SECTION
+   ========================================================= */
+
+.scale{
+  padding:105px 0;
+  background:var(--cream);
+}
+
+.scale-grid{
+  display:grid;
+  grid-template-columns:1fr 1.5fr;
+  gap:80px;
+}
+
+.scale-title h2{
+  color:var(--green-dark);
+  font-size:clamp(38px,5vw,60px);
+  line-height:1;
+  letter-spacing:-3px;
+}
+
+.scale-copy p{
+  color:var(--muted);
+  font-size:15px;
+  margin-bottom:20px;
+}
+
+.scale-steps{
+  margin-top:35px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  border-top:1px solid var(--line);
+}
+
+.scale-step{
+  padding:25px 20px 0 0;
+  border-right:1px solid var(--line);
+  margin-right:20px;
+}
+
+.scale-step:last-child{
+  border-right:0;
+}
+
+.scale-step strong{
+  display:block;
+  color:var(--green);
+  font-size:12px;
+  margin-bottom:8px;
+}
+
+.scale-step span{
+  color:var(--green-dark);
+  font-size:13px;
+  font-weight:800;
+}
+
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.cta{
+  padding:100px 0;
+  background:#fff;
+}
+
+.cta-inner{
+  background:var(--green);
+  padding:60px 65px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:45px;
+}
+
+.cta-copy{
+  max-width:720px;
+}
+
+.cta-copy .small-label{
+  color:#e0f9dd;
+}
+
+.cta-copy h2{
+  color:#fff;
+  font-size:clamp(34px,4vw,52px);
+  line-height:1.05;
+  letter-spacing:-2px;
+  margin-bottom:15px;
+}
+
+.cta-copy p{
+  color:rgba(255,255,255,.78);
+  font-size:15px;
+}
+
+.cta-actions{
+  display:flex;
+  gap:12px;
+  flex-shrink:0;
+  flex-wrap:wrap;
+}
+
+.cta-btn{
+  display:inline-flex;
+  min-height:50px;
+  padding:13px 22px;
+  align-items:center;
+  justify-content:center;
+  border-radius:12px;
+  font-size:13px;
+  font-weight:900;
+  background:#fff;
+  color:var(--green-dark);
+  transition:.25s ease;
+}
+
+.cta-btn:hover{
+  transform:translateY(-3px);
+}
+
+.cta-btn.dark{
+  background:var(--green-dark);
+  color:#fff;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer{
+  background:var(--green-deep);
+  color:#fff;
+  padding:75px 0 25px;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:1.6fr 1fr 1fr 1fr;
+  gap:50px;
+  padding-bottom:55px;
+  border-bottom:1px solid rgba(255,255,255,.12);
+}
+
+.footer-brand img{
+  width:150px;
+  height:72px;
+  object-fit:contain;
+  margin-bottom:20px;
+}
+
+.footer-brand p{
+  max-width:420px;
+  color:rgba(255,255,255,.63);
+  font-size:14px;
+  line-height:1.8;
+}
+
+.footer-col h3{
+  color:#fff;
+  font-size:14px;
+  margin-bottom:18px;
+}
+
+.footer-col a{
+  display:block;
+  color:rgba(255,255,255,.62);
+  font-size:13px;
+  margin-bottom:10px;
+  transition:.2s ease;
+}
+
+.footer-col a:hover{
+  color:#baf4b7;
+  transform:translateX(3px);
+}
+
+.footer-bottom{
+  padding-top:22px;
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  color:rgba(255,255,255,.42);
+  font-size:12px;
+}
+
+.footer-bottom a{
+  color:rgba(255,255,255,.65);
+}
+
+
+/* =========================================================
+   BACK TO TOP
+   ========================================================= */
+
+#backTop{
+  position:fixed;
+  right:22px;
+  bottom:22px;
+  width:48px;
+  height:48px;
+  border:0;
+  border-radius:14px;
+  background:var(--green-dark);
+  color:#fff;
+  font-size:19px;
+  cursor:pointer;
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(15px);
+  transition:.3s ease;
+  z-index:999;
+  box-shadow:0 12px 30px rgba(10,45,35,.22);
+}
+
+#backTop.show{
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0);
+}
+
+#backTop:hover{
+  background:var(--green);
+}
+
+
+/* =========================================================
+   REVEAL
+   ========================================================= */
+
+.reveal{
+  opacity:0;
+  transform:translateY(24px);
+  transition:
+    opacity .7s ease,
+    transform .7s ease;
+}
+
+.reveal.show{
+  opacity:1;
+  transform:none;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media(max-width:1000px){
+
+  #navlinks a{
+    padding:10px 8px;
+    font-size:11px;
+  }
+
+  .program-header{
+    grid-template-columns:200px 1fr;
+    gap:40px;
+  }
+
+  .enabler-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .footer-grid{
+    grid-template-columns:1.5fr 1fr 1fr;
+  }
+
+  .footer-col:last-child{
+    display:none;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media(max-width:760px){
+
+  .container{
+    width:min(calc(100% - 28px),var(--max));
+  }
+
+  .nav-wrap{
+    width:calc(100% - 28px);
+    min-height:70px;
+  }
+
+  .brand img{
+    width:125px;
+    height:62px;
+  }
+
+  #menuBtn{
+    display:flex;
+  }
+
+  #navlinks{
+    position:absolute;
+    top:76px;
+    left:14px;
+    right:14px;
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    gap:4px;
+    padding:12px;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:20px;
+    box-shadow:0 20px 50px rgba(15,48,40,.15);
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(-10px);
+    transition:.25s ease;
+  }
+
+  #navlinks.open{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+  }
+
+  #navlinks a{
+    padding:13px 15px;
+    font-size:14px;
+  }
+
+  #navlinks a.active:after{
+    display:none;
+  }
+
+  #navlinks .nav-donate{
+    text-align:center;
+    margin:4px 0 0;
+  }
+
+  .program-hero{
+    padding:80px 0 70px;
+  }
+
+  .program-hero:before{
+    font-size:85px;
+    top:25px;
+  }
+
+  .program-hero h1{
+    font-size:47px;
+    letter-spacing:-3px;
+  }
+
+  .hero-intro{
+    font-size:16px;
+  }
+
+  .pathway,
+  .program-detail,
+  .why,
+  .enablers,
+  .quote-section,
+  .scale{
+    padding:75px 0;
+  }
+
+  .pathway-grid{
+    grid-template-columns:1fr;
+  }
+
+  .program-header{
+    grid-template-columns:1fr;
+    gap:25px;
+    margin-bottom:40px;
+  }
+
+  .program-header h2{
+    font-size:39px;
+  }
+
+  .detail-grid{
+    grid-template-columns:1fr;
+  }
+
+  .outcome{
+    grid-column:auto;
+  }
+
+  .why-grid{
+    grid-template-columns:1fr;
+    gap:40px;
+  }
+
+  .enabler-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .scale-grid{
+    grid-template-columns:1fr;
+    gap:40px;
+  }
+
+  .scale-steps{
+    grid-template-columns:1fr;
+    gap:15px;
+  }
+
+  .scale-step{
+    border-right:0;
+    border-bottom:1px solid var(--line);
+    padding:18px 0;
+    margin:0;
+  }
+
+  .cta-inner{
+    padding:42px 28px;
+    display:block;
+  }
+
+  .cta-actions{
+    margin-top:30px;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr 1fr;
+    gap:35px 25px;
+  }
+
+  .footer-brand{
+    grid-column:1/-1;
+  }
+
+  .footer-col:last-child{
+    display:block;
+  }
+
+  .footer-bottom{
+    flex-direction:column;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media(max-width:480px){
+
+  .program-hero h1{
+    font-size:41px;
+  }
+
+  .hero-kicker{
+    font-size:10px;
+  }
+
+  .program-card{
+    padding:30px 25px;
+  }
+
+  .enabler-grid{
+    grid-template-columns:1fr;
+  }
+
+  .cta-actions{
+    flex-direction:column;
+  }
+
+  .cta-btn{
+    width:100%;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+
+  .footer-brand{
+    grid-column:auto;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- =========================================================
+     TOP BAR
+     ========================================================= -->
+
+<div class="topbar">
+  Building stronger connections between rural producers and urban consumers.
+</div>
+
+
+<!-- =========================================================
+     HEADER
+     ========================================================= -->
+
+<header>
+
+  <div class="nav-wrap">
+
+    <a
+      class="brand"
+      href="https://mugawardwayup.marketing2advertising.com/"
+      aria-label="Mugaward Way Up Foundation Home"
+    >
+
+      <img
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRLNo-rRcj2V7NP1GMLqS77PpmNB4puzQgYMstUaQVYiFfcn26Va0GYpROz3JMUGWtk7phZfahcxUDgIQPBumEgqKBfEtQYoeKB_H3J1xAsydaNptuZhA4dRYm0uOhiYR4ZZ2v7HZWp43BLnQK479_5tH-XAlgWUEQRplfFCsMEzSLqASgYVoXjXw2G7Go/s1600/images.png"
+        alt="Mugaward Way Up Foundation"
+      >
+
+    </a>
+
+
+    <button
+      id="menuBtn"
+      aria-label="Open menu"
+      aria-expanded="false"
+    >
+      ☰
+    </button>
+
+
+    <nav id="navlinks">
+
+      <a href="https://mugawardwayup.marketing2advertising.com/">
+        Home
+      </a>
+
+      <a href="https://mugawardwayup.marketing2advertising.com/about-us.html">
+        About us
+      </a>
+
+      <a
+        href="https://mugawardwayup.marketing2advertising.com/our-programs.html"
+        class="active"
+      >
+        Our programs
+      </a>
+
+      <a href="https://mugawardwayup.marketing2advertising.com/contact-us/">
+        Contact Us
+      </a>
+
+      <a
+        href="https://mugawardwayup.marketing2advertising.com/donate.html"
+        class="nav-donate"
+      >
+        Donate
+      </a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+
+<section class="program-hero">
+
+  <div class="container">
+
+    <div class="program-hero-inner reveal">
+
+      <div class="hero-kicker">
+        Our Programs
+      </div>
+
+      <h1>
+        Connecting food,
+        <span>people and opportunity.</span>
+      </h1>
+
+      <p class="hero-intro">
+        Our detailed programs connect food production, urban demand
+        and inclusive finance. Each program addresses a different
+        part of the same livelihood ecosystem, while shared systems
+        help them work together.
+      </p>
+
+      <div class="hero-links">
+
+        <a class="hero-link" href="#produce">
+          Produce Quality Food
+        </a>
+
+        <a class="hero-link" href="#consumers">
+          Mobilize Consumers
+        </a>
+
+        <a class="hero-link" href="#microcredit">
+          Microcredit
+        </a>
+
+        <a class="hero-link" href="#enablers">
+          Shared Systems
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     THREE CORE PROGRAMS
+     ========================================================= -->
+
+<section class="pathway">
+
+  <div class="container">
+
+    <div class="pathway-head reveal">
+
+      <div class="small-label">
+        Three Core Programs
+      </div>
+
+      <h2>
+        Stronger production. Stronger markets. Stronger access to finance.
+      </h2>
+
+      <p>
+        Each program can stand on its own, but the full power of the model
+        comes when all three work together: stronger production, stronger
+        market connection and stronger access to finance.
+      </p>
+
+    </div>
+
+
+    <div class="pathway-grid">
+
+      <a class="pathway-card reveal" href="#produce">
+
+        <div class="pathway-number">
+          01 / PRODUCTION
+        </div>
+
+        <div class="pathway-icon">
+          🌱
+        </div>
+
+        <h3>
+          Produce Quality Food
+        </h3>
+
+        <p>
+          We improve farm productivity, quality, resilience and market
+          readiness among smallholder farmers.
+        </p>
+
+      </a>
+
+
+      <a class="pathway-card reveal" href="#consumers">
+
+        <div class="pathway-number">
+          02 / DEMAND
+        </div>
+
+        <div class="pathway-icon">
+          🏙️
+        </div>
+
+        <h3>
+          Mobilize Consumers &amp; Connect Them to Producers
+        </h3>
+
+        <p>
+          We build dependable urban demand and transparent pathways
+          from farm to household.
+        </p>
+
+      </a>
+
+
+      <a class="pathway-card reveal" href="#microcredit">
+
+        <div class="pathway-number">
+          03 / FINANCE
+        </div>
+
+        <div class="pathway-icon">
+          🤝
+        </div>
+
+        <h3>
+          Microcredit for Producers and Consumers
+        </h3>
+
+        <p>
+          We offer financial tools that allow both sides of the market
+          to participate consistently.
+        </p>
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     PROGRAM 01 — PRODUCE QUALITY FOOD
+     ========================================================= -->
+
+<section class="program-detail" id="produce">
+
+  <div class="container">
+
+    <div class="program-header reveal">
+
+      <div class="program-label">
+        Program 01<br>
+        Production
+      </div>
+
+      <div>
+
+        <h2>
+          Produce Quality Food
+        </h2>
+
+        <p>
+          This program works with rural and peri-urban smallholder farmers
+          to improve the quantity, quality and consistency of food entering
+          the market. The goal is not only higher yields, but better market
+          fit: produce that is cleaner, better handled, more reliable and
+          aligned with the preferences of urban consumers.
+        </p>
+
+        <p style="margin-top:18px;">
+          Farmers receive practical support in production planning,
+          climate-smart methods, access to improved inputs, group
+          coordination, basic record keeping and post-harvest management.
+          Where possible, the program also promotes aggregation so that
+          farmers can meet volume, timing and quality expectations together
+          rather than individually.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="detail-grid">
+
+      <div class="detail-box reveal">
+
+        <h3>
+          Key components
+        </h3>
+
+        <ul>
+
+          <li>Farmer mobilization and group strengthening</li>
+
+          <li>Extension services and demonstration support</li>
+
+          <li>Access to quality seeds, inputs and seasonal planning</li>
+
+          <li>Harvest handling, grading, packaging and storage practices</li>
+
+          <li>Simple quality assurance and traceability standards</li>
+
+          <li>Links to aggregation points and reliable off-take channels</li>
+
+        </ul>
+
+      </div>
+
+
+      <div class="detail-box reveal">
+
+        <h3>
+          Who benefits
+        </h3>
+
+        <p style="color:var(--muted);font-size:14px;">
+          Smallholder farmers, women producers, youth agripreneurs,
+          farmer groups and the urban consumers who depend on consistent
+          food quality.
+        </p>
+
+      </div>
+
+
+      <div class="outcome reveal">
+
+        <h3>
+          Expected outcomes
+        </h3>
+
+        <p>
+          More market-ready produce, lower losses, stronger farmer
+          confidence, better price realization and a more dependable
+          supply base for urban demand.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="project-link-wrap reveal">
+
+      <a
+        class="project-link"
+        href="https://mugawardwayup.marketing2advertising.com/sustainable-farming-project.html"
+      >
+        Explore Sustainable Farming Project →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     PROGRAM 02 — CONSUMERS
+     ========================================================= -->
+
+<section class="program-detail alt" id="consumers">
+
+  <div class="container">
+
+    <div class="program-header reveal">
+
+      <div class="program-label">
+        Program 02<br>
+        Urban Demand
+      </div>
+
+      <div>
+
+        <h2>
+          Mobilize Consumers &amp; Connect Them Directly to Producers
+        </h2>
+
+        <p>
+          This program organizes urban consumers not merely as buyers,
+          but as a community of demand. Households, neighborhoods,
+          schools, offices, churches and informal associations can be
+          mobilized into buying groups, subscription schemes or scheduled
+          order cycles that create predictable demand for farmers.
+        </p>
+
+        <p style="margin-top:18px;">
+          By improving visibility between producer and consumer, the
+          program builds trust and reduces unnecessary layers in the
+          supply chain. It also creates room for storytelling,
+          transparency and a stronger local food identity: consumers know
+          where food comes from, and farmers know who they are serving.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="detail-grid">
+
+      <div class="detail-box reveal">
+
+        <h3>
+          Key components
+        </h3>
+
+        <ul>
+
+          <li>Urban consumer mapping and enrollment</li>
+
+          <li>Community buying clubs and neighborhood order systems</li>
+
+          <li>Weekly or monthly food basket coordination</li>
+
+          <li>Institutional supply relationships for schools and workplaces</li>
+
+          <li>Pricing transparency and source communication</li>
+
+          <li>Light-touch digital tools for orders, updates and market information</li>
+
+        </ul>
+
+      </div>
+
+
+      <div class="detail-box reveal">
+
+        <h3>
+          Expected outcomes
+        </h3>
+
+        <p style="color:var(--muted);font-size:14px;">
+          Stronger urban customer loyalty, more predictable sales,
+          improved consumer trust and closer producer-consumer
+          relationships.
+        </p>
+
+      </div>
+
+
+      <div class="outcome reveal">
+
+        <h3>
+          Why it matters
+        </h3>
+
+        <p>
+          In Kampala and other Ugandan cities, food still moves largely
+          through local retailers, markets and street vendors. A direct
+          linkage model can strengthen those realities instead of
+          ignoring them.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     PROGRAM 03 — MICROCREDIT
+     ========================================================= -->
+
+<section class="program-detail dark" id="microcredit">
+
+  <div class="container">
+
+    <div class="program-header reveal">
+
+      <div class="program-label">
+        Program 03<br>
+        Inclusive Finance
+      </div>
+
+      <div>
+
+        <h2>
+          Microcredit for Producers and Consumers
+        </h2>
+
+        <p>
+          Finance is the thread that allows the value chain to function.
+          Producers need seasonal capital for seed, labor, inputs,
+          irrigation, transport and packaging. Consumers also need
+          flexibility, especially low-income families who buy food in
+          small units or face irregular cash flow.
+        </p>
+
+        <p style="margin-top:18px;">
+          This program creates responsible microcredit solutions that
+          help both sides stay active in the market.
+        </p>
+
+        <p style="margin-top:18px;">
+          For farmers, this may include production loans, input credit,
+          harvest-linked repayment and bundled financial literacy.
+          For consumers, it may include structured purchase plans,
+          group-based food credit, or short-cycle repayment products
+          that increase access without pushing households deeper into
+          distress.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="detail-grid">
+
+      <div class="detail-box reveal">
+
+        <h3>
+          Key components
+        </h3>
+
+        <ul>
+
+          <li>Producer input credit and seasonal working capital</li>
+
+          <li>Group-based lending and repayment discipline</li>
+
+          <li>Consumer food credit for organized buying communities</li>
+
+          <li>Savings and financial literacy integration</li>
+
+          <li>Flexible repayment tied to production and cash-flow realities</li>
+
+          <li>Data and relationship-based screening rather than exclusionary formal rules</li>
+
+        </ul>
+
+      </div>
+
+
+      <div class="detail-box reveal">
+
+        <h3>
+          Expected outcomes
+        </h3>
+
+        <p style="color:rgba(255,255,255,.63);font-size:14px;">
+          Greater participation across the food chain, better timing of
+          purchases, improved resilience and reduced dependence on
+          harmful informal borrowing.
+        </p>
+
+      </div>
+
+
+      <div class="outcome reveal">
+
+        <h3>
+          Safeguard principle
+        </h3>
+
+        <p>
+          Credit should expand dignity and opportunity, not create
+          pressure without support. That is why lending must be paired
+          with training, group systems and careful product design.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="project-link-wrap reveal">
+
+      <a
+        class="project-link"
+        href="https://mugawardwayup.marketing2advertising.com/mugaward-micro-credit-project.html"
+      >
+        Explore Mugaward Micro Credit Project →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     WHY THE MODEL MATTERS
+     ========================================================= -->
+
+<section class="why">
+
+  <div class="container">
+
+    <div class="why-grid">
+
+      <div class="why-title reveal">
+
+        <div class="small-label">
+          The Bigger Picture
+        </div>
+
+        <h2>
+          Food is both a
+          <span>livelihood engine</span>
+          and a community service.
+        </h2>
+
+      </div>
+
+
+      <div class="why-copy reveal">
+
+        <p>
+          The programs are designed to work together rather than
+          operate as isolated interventions.
+        </p>
+
+        <p>
+          Better production creates stronger supply. Organized consumer
+          demand creates a clearer market. Responsible finance helps
+          producers and consumers participate consistently.
+        </p>
+
+        <p>
+          Together, these elements can create stronger relationships
+          across the food chain while supporting practical livelihood
+          opportunities.
+        </p>
+
+        <div class="why-statement">
+          Stronger production + stronger demand + responsible finance.
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     CROSS-CUTTING ENABLERS
+     ========================================================= -->
+
+<section class="enablers" id="enablers">
+
+  <div class="container">
+
+    <div class="enablers-head reveal">
+
+      <div class="small-label">
+        Cross-Cutting Enablers
+      </div>
+
+      <h2>
+        Shared systems that make all programs stronger.
+      </h2>
+
+      <p>
+        The three core programs are supported by practical systems
+        that improve coordination, learning, delivery and accountability.
+      </p>
+
+    </div>
+
+
+    <div class="enabler-grid">
+
+
+      <div class="enabler reveal">
+
+        <div class="enabler-number">
+          01
+        </div>
+
+        <h3>
+          Data &amp; Coordination
+        </h3>
+
+        <p>
+          Farmer profiling, crop calendars, order forecasts and simple
+          market intelligence.
+        </p>
+
+      </div>
+
+
+      <div class="enabler reveal">
+
+        <div class="enabler-number">
+          02
+        </div>
+
+        <h3>
+          Logistics &amp; Aggregation
+        </h3>
+
+        <p>
+          Collection, storage, sorting, delivery routes and low-cost
+          last-mile systems.
+        </p>
+
+      </div>
+
+
+      <div class="enabler reveal">
+
+        <div class="enabler-number">
+          03
+        </div>
+
+        <h3>
+          Training &amp; Coaching
+        </h3>
+
+        <p>
+          Continuous support for production, business discipline,
+          customer service and repayment behavior.
+        </p>
+
+      </div>
+
+
+      <div class="enabler reveal">
+
+        <div class="enabler-number">
+          04
+        </div>
+
+        <h3>
+          Partnerships
+        </h3>
+
+        <p>
+          Local government, savings groups, institutions, market leaders
+          and development actors.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     QUOTE
+     ========================================================= -->
+
+<section class="quote-section">
+
+  <div class="container">
+
+    <div class="quote-inner reveal">
+
+      <div class="quote-mark">
+        “
+      </div>
+
+      <blockquote>
+        The strongest version of this model is not only profitable.
+        It is trusted, inclusive and locally anchored.
+      </blockquote>
+
+      <cite>
+        Mugaward Way Up Foundation
+      </cite>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     PILOT / SCALE
+     ========================================================= -->
+
+<section class="scale">
+
+  <div class="container">
+
+    <div class="scale-grid">
+
+      <div class="scale-title reveal">
+
+        <div class="small-label">
+          Starting Practical
+        </div>
+
+        <h2>
+          Start small.<br>
+          Learn.<br>
+          Build.
+        </h2>
+
+      </div>
+
+
+      <div class="scale-copy reveal">
+
+        <p>
+          Start with a manageable pilot geography linking selected
+          producer groups to a defined urban customer base.
+        </p>
+
+        <p>
+          Test quality standards, aggregation routines, buying schedules
+          and microcredit terms.
+        </p>
+
+        <p>
+          Learn from the pilot, then scale district by district and
+          buyer group by buyer group with stronger data and partnerships.
+        </p>
+
+
+        <div class="scale-steps">
+
+          <div class="scale-step">
+
+            <strong>
+              01
+            </strong>
+
+            <span>
+              Pilot
+            </span>
+
+          </div>
+
+
+          <div class="scale-step">
+
+            <strong>
+              02
+            </strong>
+
+            <span>
+              Learn &amp; Improve
+            </span>
+
+          </div>
+
+
+          <div class="scale-step">
+
+            <strong>
+              03
+            </strong>
+
+            <span>
+              Scale Responsibly
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     CTA
+     ========================================================= -->
+
+<section class="cta">
+
+  <div class="container">
+
+    <div class="cta-inner reveal">
+
+      <div class="cta-copy">
+
+        <div class="small-label">
+          Get Involved
+        </div>
+
+        <h2>
+          Help strengthen the connection between production and opportunity.
+        </h2>
+
+        <p>
+          Support our programs, explore partnership opportunities
+          or connect with Mugaward Way Up Foundation.
+        </p>
+
+      </div>
+
+
+      <div class="cta-actions">
+
+        <a
+          class="cta-btn"
+          href="https://mugawardwayup.marketing2advertising.com/donate.html"
+        >
+          Donate Now
+        </a>
+
+        <a
+          class="cta-btn dark"
+          href="https://mugawardwayup.marketing2advertising.com/contact-us/"
+        >
+          Contact Us
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+
+      <div class="footer-brand">
+
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRLNo-rRcj2V7NP1GMLqS77PpmNB4puzQgYMstUaQVYiFfcn26Va0GYpROz3JMUGWtk7phZfahcxUDgIQPBumEgqKBfEtQYoeKB_H3J1xAsydaNptuZhA4dRYm0uOhiYR4ZZ2v7HZWp43BLnQK479_5tH-XAlgWUEQRplfFCsMEzSLqASgYVoXjXw2G7Go/s1600/images.png"
+          alt="Mugaward Way Up Foundation"
+          loading="lazy"
+        >
+
+        <p>
+          Mugaward Way Up Foundation is a Ugandan NGO building a fair food
+          ecosystem that directly connects smallholder farmers to urban
+          consumers by supporting quality production and organizing
+          reliable demand.
+        </p>
+
+      </div>
+
+
+      <div class="footer-col">
+
+        <h3>
+          Explore
+        </h3>
+
+        <a href="https://mugawardwayup.marketing2advertising.com/about-us.html">
+          About us
+        </a>
+
+        <a href="https://mugawardwayup.marketing2advertising.com/our-programs.html">
+          Our programs
+        </a>
+
+        <a href="https://mugawardwayup.marketing2advertising.com/contact-us/">
+          Contact Us
+        </a>
+
+        <a href="https://mugawardwayup.marketing2advertising.com/donate.html">
+          Donate
+        </a>
+
+      </div>
+
+
+      <div class="footer-col">
+
+        <h3>
+          Projects
+        </h3>
+
+        <a href="https://mugawardwayup.marketing2advertising.com/sustainable-farming-project.html">
+          Sustainable Farming
+        </a>
+
+        <a href="https://mugawardwayup.marketing2advertising.com/carpentry-joinery-training.html">
+          Carpentry &amp; Joinery
+        </a>
+
+        <a href="https://mugawardwayup.marketing2advertising.com/street-vending-project.html">
+          Street Vending
+        </a>
+
+        <a href="https://mugawardwayup.marketing2advertising.com/mugaward-micro-credit-project.html">
+          Micro Credit
+        </a>
+
+      </div>
+
+
+      <div class="footer-col">
+
+        <h3>
+          Foundation
+        </h3>
+
+        <a href="https://mugawardwayup.marketing2advertising.com/about-us.html">
+          Who we are
+        </a>
+
+        <a href="#enablers">
+          How our model works
+        </a>
+
+        <a href="#top">
+          Back to top ↑
+        </a>
+
+      </div>
+
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <div>
+        Copyright© 2026 Mugaward Way Up Foundation, All rights reserved.
+      </div>
+
+      <a href="https://mugawardwayup.org">
+        mugawardwayup.org
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- =========================================================
+     BACK TO TOP
+     ========================================================= -->
+
+<button id="backTop" aria-label="Back to top">
+  ↑
+</button>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+     ========================================================= -->
+
+<script>
+
+/* =========================================================
+   MOBILE MENU
+   ========================================================= */
+
+const menuBtn = document.getElementById('menuBtn');
+const nav = document.getElementById('navlinks');
+
+menuBtn.addEventListener('click',function(){
+
+  const open = nav.classList.toggle('open');
+
+  menuBtn.setAttribute(
+    'aria-expanded',
+    open ? 'true' : 'false'
+  );
+
+  menuBtn.setAttribute(
+    'aria-label',
+    open ? 'Close menu' : 'Open menu'
+  );
+
+  menuBtn.textContent = open ? '×' : '☰';
+
+});
+
+
+/* CLOSE MOBILE MENU */
+
+document.querySelectorAll('#navlinks a').forEach(function(link){
+
+  link.addEventListener('click',function(){
+
+    nav.classList.remove('open');
+
+    menuBtn.textContent='☰';
+
+    menuBtn.setAttribute('aria-expanded','false');
+
+    menuBtn.setAttribute('aria-label','Open menu');
+
+  });
+
+});
+
+
+/* =========================================================
+   REVEAL ANIMATIONS
+   ========================================================= */
+
+const revealObserver =
+new IntersectionObserver(function(entries){
+
+  entries.forEach(function(entry){
+
+    if(entry.isIntersecting){
+
+      entry.target.classList.add('show');
+
+      revealObserver.unobserve(entry.target);
+
+    }
+
+  });
+
+},{
+  threshold:.12
+});
+
+
+document
+  .querySelectorAll('.reveal')
+  .forEach(function(element){
+
+    revealObserver.observe(element);
+
+  });
+
+
+/* =========================================================
+   BACK TO TOP
+   ========================================================= */
+
+const backTop=document.getElementById('backTop');
+
+window.addEventListener('scroll',function(){
+
+  if(window.scrollY>500){
+
+    backTop.classList.add('show');
+
+  }else{
+
+    backTop.classList.remove('show');
+
+  }
+
+});
+
+
+backTop.addEventListener('click',function(){
+
+  window.scrollTo({
+    top:0,
+    behavior:'smooth'
+  });
+
+});
+
+</script>
+
+</body>
+</html>

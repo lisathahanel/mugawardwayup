@@ -1,0 +1,1832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Donate | Mugaward Way Up Foundation</title>
+
+<meta name="description" content="Support Mugaward Way Up Foundation as we build stronger connections between smallholder farmers, urban consumers and local communities in Uganda.">
+
+<style>
+/* =========================================================
+   MUGAWARD WAY UP FOUNDATION
+   DONATE PAGE
+   PREMIUM FUNDRAISING / COMMUNITY EDITION
+   ========================================================= */
+
+:root{
+  --green:#26bd21;
+  --green-dark:#123f32;
+  --green-deep:#09251f;
+  --ink:#182a2a;
+  --muted:#667574;
+  --cream:#f7f4ed;
+  --paper:#ffffff;
+  --soft:#eef5f1;
+  --gold:#d9b56d;
+  --line:rgba(18,63,50,.12);
+  --shadow:0 25px 70px rgba(15,48,40,.13);
+  --radius:26px;
+  --max:1180px;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:var(--cream);
+  color:var(--ink);
+  line-height:1.7;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+.container{
+  width:min(var(--max),calc(100% - 40px));
+  margin:auto;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(255,255,255,.96);
+  border-bottom:1px solid var(--line);
+  backdrop-filter:blur(14px);
+}
+
+.navbar{
+  min-height:82px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+}
+
+.logo img{
+  width:145px;
+}
+
+.navlinks{
+  display:flex;
+  align-items:center;
+  gap:7px;
+}
+
+.navlinks a{
+  padding:11px 15px;
+  border-radius:12px;
+  color:var(--green-dark);
+  font-size:14px;
+  font-weight:700;
+  transition:.25s ease;
+}
+
+.navlinks a:hover{
+  background:var(--soft);
+  color:var(--green);
+}
+
+.navlinks .donate-link{
+  background:var(--green);
+  color:#fff;
+  padding:12px 20px;
+}
+
+.navlinks .donate-link:hover{
+  background:var(--green-dark);
+  color:#fff;
+}
+
+.menu-btn{
+  display:none;
+  width:44px;
+  height:44px;
+  border:0;
+  border-radius:12px;
+  background:var(--green-dark);
+  color:#fff;
+  font-size:23px;
+  cursor:pointer;
+}
+
+/* =========================================================
+   DONATE HERO
+   ========================================================= */
+
+.donate-hero{
+  min-height:720px;
+  display:flex;
+  align-items:center;
+  position:relative;
+  overflow:hidden;
+  background:
+    linear-gradient(100deg,rgba(9,37,31,.98) 0%,rgba(9,37,31,.91) 43%,rgba(9,37,31,.54) 75%,rgba(9,37,31,.32) 100%),
+    url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0Z5_VghsWoY8HlKS58eyRoJLDJf_zmLRS5dpENvfGWwCBAYAWoyiLv21DVpQXwcFiCJSerjIg5qtRHddmaWTMe7giOt-p4m8iZOi9hLghI32FEcIOo2jpjPMOY_Uuj7QrIEmkzc0pw_9klo2KEmY7K5yqRdhIaLH7CkXWhMsMn79dhl7542PVCwXncbFl/s1600/images.png");
+  background-size:cover;
+  background-position:center;
+}
+
+.donate-hero:after{
+  content:"";
+  position:absolute;
+  width:520px;
+  height:520px;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:50%;
+  right:-190px;
+  top:-160px;
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  max-width:760px;
+  color:#fff;
+  padding:80px 0;
+}
+
+.hero-label{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  color:var(--green);
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:2.5px;
+  text-transform:uppercase;
+  margin-bottom:18px;
+}
+
+.hero-label:before{
+  content:"";
+  width:28px;
+  height:2px;
+  background:var(--green);
+}
+
+.hero-content h1{
+  margin:0 0 22px;
+  font-size:clamp(46px,7vw,82px);
+  line-height:.98;
+  letter-spacing:-4px;
+  max-width:820px;
+}
+
+.hero-content h1 span{
+  color:var(--green);
+}
+
+.hero-content p{
+  max-width:650px;
+  color:rgba(255,255,255,.77);
+  font-size:18px;
+  margin:0 0 32px;
+}
+
+.hero-actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.hero-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:15px 24px;
+  border-radius:13px;
+  font-size:14px;
+  font-weight:800;
+  transition:.25s ease;
+}
+
+.hero-btn.primary{
+  background:var(--green);
+  color:#fff;
+}
+
+.hero-btn.primary:hover{
+  background:#fff;
+  color:var(--green-dark);
+  transform:translateY(-2px);
+}
+
+.hero-btn.secondary{
+  border:1px solid rgba(255,255,255,.24);
+  color:#fff;
+  background:rgba(255,255,255,.05);
+}
+
+.hero-btn.secondary:hover{
+  background:#fff;
+  color:var(--green-dark);
+}
+
+/* =========================================================
+   DONATION STRIP
+   ========================================================= */
+
+.donation-strip{
+  margin-top:-1px;
+  position:relative;
+  z-index:5;
+}
+
+.donation-panel{
+  background:#fff;
+  border-radius:0 0 28px 28px;
+  box-shadow:0 20px 60px rgba(15,48,40,.12);
+  padding:32px;
+  display:grid;
+  grid-template-columns:1fr 1.7fr;
+  gap:30px;
+  align-items:center;
+}
+
+.donation-panel h2{
+  margin:0 0 5px;
+  color:var(--green-dark);
+  font-size:28px;
+}
+
+.donation-panel p{
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+}
+
+.donation-actions{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+}
+
+.donation-option{
+  border:1px solid var(--line);
+  background:var(--soft);
+  border-radius:13px;
+  padding:15px 10px;
+  text-align:center;
+  color:var(--green-dark);
+  font-size:14px;
+  font-weight:900;
+  transition:.25s ease;
+}
+
+.donation-option:hover{
+  background:var(--green-dark);
+  color:#fff;
+  transform:translateY(-3px);
+}
+
+.donation-option.custom{
+  background:var(--green);
+  color:#fff;
+}
+
+.donation-option.custom:hover{
+  background:var(--green-dark);
+}
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.section{
+  padding:100px 0;
+}
+
+.section-white{
+  background:#fff;
+}
+
+.section-soft{
+  background:var(--soft);
+}
+
+.section-heading{
+  max-width:740px;
+  margin-bottom:48px;
+}
+
+.eyebrow{
+  display:inline-block;
+  color:var(--green);
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:2.5px;
+  text-transform:uppercase;
+  margin-bottom:12px;
+}
+
+.section-heading h2{
+  margin:0 0 15px;
+  color:var(--green-dark);
+  font-size:clamp(35px,5vw,55px);
+  line-height:1.05;
+  letter-spacing:-2px;
+}
+
+.section-heading p{
+  margin:0;
+  color:var(--muted);
+  font-size:17px;
+}
+
+/* =========================================================
+   COMMUNITY IMPACT IMAGE
+   ========================================================= */
+
+.community-layout{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:65px;
+  align-items:center;
+}
+
+.community-image{
+  position:relative;
+}
+
+.community-image img{
+  width:100%;
+  height:570px;
+  object-fit:cover;
+  border-radius:30px;
+  box-shadow:var(--shadow);
+}
+
+.community-badge{
+  position:absolute;
+  right:-25px;
+  bottom:35px;
+  background:var(--green);
+  color:#fff;
+  border-radius:20px;
+  padding:20px 23px;
+  max-width:210px;
+  box-shadow:0 20px 45px rgba(38,189,33,.25);
+}
+
+.community-badge strong{
+  display:block;
+  font-size:27px;
+  line-height:1;
+  margin-bottom:6px;
+}
+
+.community-badge span{
+  font-size:12px;
+  line-height:1.4;
+  display:block;
+}
+
+.community-copy h2{
+  margin:0 0 18px;
+  color:var(--green-dark);
+  font-size:clamp(36px,4vw,54px);
+  line-height:1.04;
+  letter-spacing:-2px;
+}
+
+.community-copy p{
+  color:var(--muted);
+  margin:0 0 18px;
+}
+
+.check-list{
+  list-style:none;
+  padding:0;
+  margin:27px 0 0;
+  display:grid;
+  gap:13px;
+}
+
+.check-list li{
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  color:var(--green-dark);
+  font-size:14px;
+  font-weight:700;
+}
+
+.check-list span{
+  flex:0 0 23px;
+  width:23px;
+  height:23px;
+  border-radius:50%;
+  background:rgba(38,189,33,.12);
+  color:var(--green);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:12px;
+}
+
+/* =========================================================
+   IMPACT CARDS
+   ========================================================= */
+
+.impact-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.impact-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:24px;
+  padding:32px;
+  transition:.3s ease;
+}
+
+.impact-card:hover{
+  transform:translateY(-7px);
+  box-shadow:var(--shadow);
+}
+
+.impact-icon{
+  width:55px;
+  height:55px;
+  border-radius:16px;
+  background:var(--soft);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:25px;
+  margin-bottom:24px;
+}
+
+.impact-card h3{
+  margin:0 0 10px;
+  color:var(--green-dark);
+  font-size:21px;
+}
+
+.impact-card p{
+  color:var(--muted);
+  font-size:14px;
+  margin:0;
+}
+
+/* =========================================================
+   MODEL
+   ========================================================= */
+
+.model-layout{
+  display:grid;
+  grid-template-columns:.85fr 1.15fr;
+  gap:70px;
+  align-items:start;
+}
+
+.model-intro h2{
+  margin:0 0 17px;
+  color:var(--green-dark);
+  font-size:clamp(36px,4vw,52px);
+  line-height:1.05;
+  letter-spacing:-1.8px;
+}
+
+.model-intro p{
+  color:var(--muted);
+  margin:0;
+}
+
+.model-steps{
+  display:grid;
+  gap:14px;
+}
+
+.model-step{
+  display:grid;
+  grid-template-columns:65px 1fr;
+  gap:20px;
+  padding:24px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:20px;
+}
+
+.step-number{
+  width:52px;
+  height:52px;
+  border-radius:50%;
+  background:var(--green-dark);
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:14px;
+  font-weight:900;
+}
+
+.model-step h3{
+  margin:0 0 5px;
+  color:var(--green-dark);
+  font-size:18px;
+}
+
+.model-step p{
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* =========================================================
+   PROGRAMS
+   ========================================================= */
+
+.program-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+
+.program-card{
+  min-height:245px;
+  border-radius:23px;
+  background:var(--green-deep);
+  color:#fff;
+  padding:27px;
+  display:flex;
+  flex-direction:column;
+  transition:.3s ease;
+}
+
+.program-card:hover{
+  transform:translateY(-6px);
+  background:var(--green-dark);
+  box-shadow:var(--shadow);
+}
+
+.program-card small{
+  color:var(--green);
+  font-weight:900;
+  letter-spacing:1px;
+}
+
+.program-card h3{
+  margin-top:auto;
+  margin-bottom:8px;
+  font-size:20px;
+  line-height:1.2;
+}
+
+.program-card span{
+  color:rgba(255,255,255,.62);
+  font-size:13px;
+}
+
+/* =========================================================
+   SUPPORT CTA
+   ========================================================= */
+
+.support-section{
+  padding:105px 0;
+  background:
+    radial-gradient(circle at 85% 15%,rgba(38,189,33,.16),transparent 28%),
+    var(--green-dark);
+  color:#fff;
+}
+
+.support-box{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:60px;
+  align-items:center;
+}
+
+.support-box h2{
+  margin:0 0 17px;
+  font-size:clamp(38px,5vw,58px);
+  line-height:1.02;
+  letter-spacing:-2px;
+}
+
+.support-box p{
+  margin:0;
+  color:rgba(255,255,255,.68);
+  max-width:650px;
+}
+
+.support-card{
+  background:#fff;
+  color:var(--ink);
+  padding:35px;
+  border-radius:25px;
+  box-shadow:var(--shadow);
+}
+
+.support-card h3{
+  margin:0 0 8px;
+  color:var(--green-dark);
+  font-size:25px;
+}
+
+.support-card p{
+  color:var(--muted);
+  font-size:14px;
+  margin:0 0 20px;
+}
+
+.support-btn{
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:16px;
+  border-radius:13px;
+  background:var(--green);
+  color:#fff;
+  font-weight:900;
+  transition:.25s ease;
+}
+
+.support-btn:hover{
+  background:var(--green-dark);
+  transform:translateY(-2px);
+}
+
+/* =========================================================
+   QUOTE
+   ========================================================= */
+
+.quote-section{
+  padding:90px 0;
+  background:var(--cream);
+  text-align:center;
+}
+
+.quote-mark{
+  font-size:60px;
+  line-height:1;
+  color:var(--green);
+}
+
+.quote-section blockquote{
+  max-width:850px;
+  margin:12px auto 18px;
+  color:var(--green-dark);
+  font-size:clamp(27px,4vw,44px);
+  line-height:1.15;
+  letter-spacing:-1.3px;
+  font-weight:700;
+}
+
+.quote-section p{
+  margin:0;
+  color:var(--muted);
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.site-footer{
+  background:#09251f;
+  color:#fff;
+  padding:70px 0 25px;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:1.6fr 1fr 1fr 1fr;
+  gap:45px;
+  padding-bottom:50px;
+  border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.footer-brand img{
+  width:145px;
+  margin-bottom:20px;
+  filter:brightness(0) invert(1);
+}
+
+.footer-brand p{
+  color:rgba(255,255,255,.63);
+  font-size:13px;
+  max-width:390px;
+  margin:0;
+}
+
+.footer-col h3{
+  margin:0 0 17px;
+  font-size:14px;
+}
+
+.footer-col a{
+  display:block;
+  color:rgba(255,255,255,.6);
+  font-size:13px;
+  margin-bottom:9px;
+  transition:.2s ease;
+}
+
+.footer-col a:hover{
+  color:var(--green);
+}
+
+.footer-bottom{
+  padding-top:25px;
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  color:rgba(255,255,255,.45);
+  font-size:12px;
+}
+
+/* =========================================================
+   BACK TOP
+   ========================================================= */
+
+.back-top{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  width:45px;
+  height:45px;
+  border:0;
+  border-radius:13px;
+  background:var(--green-dark);
+  color:#fff;
+  font-size:18px;
+  cursor:pointer;
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(10px);
+  transition:.3s ease;
+  z-index:999;
+}
+
+.back-top.show{
+  opacity:1;
+  visibility:visible;
+  transform:none;
+}
+
+.back-top:hover{
+  background:var(--green);
+}
+
+/* =========================================================
+   REVEAL
+   ========================================================= */
+
+.reveal{
+  opacity:0;
+  transform:translateY(25px);
+  transition:opacity .7s ease,transform .7s ease;
+}
+
+.reveal.show{
+  opacity:1;
+  transform:none;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media(max-width:1000px){
+
+  .donation-panel{
+    grid-template-columns:1fr;
+  }
+
+  .donation-actions{
+    grid-template-columns:repeat(4,1fr);
+  }
+
+  .community-layout,
+  .model-layout,
+  .support-box{
+    grid-template-columns:1fr;
+  }
+
+  .community-image{
+    max-width:760px;
+  }
+
+  .program-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .footer-grid{
+    grid-template-columns:1.5fr 1fr 1fr;
+  }
+}
+
+@media(max-width:760px){
+
+  .container{
+    width:min(var(--max),calc(100% - 28px));
+  }
+
+  .navbar{
+    min-height:72px;
+  }
+
+  .logo img{
+    width:125px;
+  }
+
+  .menu-btn{
+    display:block;
+  }
+
+  .navlinks{
+    position:absolute;
+    top:72px;
+    left:14px;
+    right:14px;
+    display:none;
+    flex-direction:column;
+    align-items:stretch;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:18px;
+    padding:10px;
+    box-shadow:0 20px 45px rgba(15,48,40,.12);
+  }
+
+  .navlinks.open{
+    display:flex;
+  }
+
+  .navlinks a{
+    padding:13px 14px;
+  }
+
+  .donate-hero{
+    min-height:650px;
+    background-position:62% center;
+  }
+
+  .hero-content{
+    padding:60px 0;
+  }
+
+  .hero-content h1{
+    font-size:46px;
+    letter-spacing:-2.5px;
+  }
+
+  .hero-content p{
+    font-size:16px;
+  }
+
+  .donation-panel{
+    padding:25px 20px;
+  }
+
+  .donation-actions{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .section{
+    padding:70px 0;
+  }
+
+  .community-image img{
+    height:430px;
+  }
+
+  .community-badge{
+    right:15px;
+    bottom:20px;
+  }
+
+  .impact-grid{
+    grid-template-columns:1fr;
+  }
+
+  .program-grid{
+    grid-template-columns:1fr;
+  }
+
+  .model-step{
+    grid-template-columns:55px 1fr;
+    padding:20px;
+  }
+
+  .support-box{
+    gap:35px;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr 1fr;
+    gap:35px 25px;
+  }
+
+  .footer-brand{
+    grid-column:1/-1;
+  }
+
+  .footer-bottom{
+    flex-direction:column;
+    gap:8px;
+  }
+}
+
+@media(max-width:480px){
+
+  .hero-content h1{
+    font-size:40px;
+  }
+
+  .hero-actions{
+    flex-direction:column;
+  }
+
+  .hero-btn{
+    width:100%;
+  }
+
+  .donation-actions{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .community-image img{
+    height:350px;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+
+  .footer-brand{
+    grid-column:auto;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- =========================================================
+     HEADER
+     ========================================================= -->
+
+<header class="site-header">
+
+  <div class="container navbar">
+
+    <a class="logo" href="https://mugawardwayup.marketing2advertising.com/">
+
+      <img
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRLNo-rRcj2V7NP1GMLqS77PpmNB4puzQgYMstUaQVYiFfcn26Va0GYpROz3JMUGWtk7phZfahcxUDgIQPBumEgqKBfEtQYoeKB_H3J1xAsydaNptuZhA4dRYm0uOhiYR4ZZ2v7HZWp43BLnQK479_5tH-XAlgWUEQRplfFCsMEzSLqASgYVoXjXw2G7Go/s1600/images.png"
+        alt="Mugaward Way Up Foundation">
+
+    </a>
+
+    <button
+      class="menu-btn"
+      id="menuBtn"
+      aria-label="Open menu"
+      aria-expanded="false">
+      ☰
+    </button>
+
+    <nav class="navlinks" id="navlinks">
+
+      <a href="https://mugawardwayup.marketing2advertising.com/">
+        Home
+      </a>
+
+      <a href="https://mugawardwayup.marketing2advertising.com/about-us.html">
+        About us
+      </a>
+
+      <a href="https://mugawardwayup.marketing2advertising.com/our-programs.html">
+        Our programs
+      </a>
+
+      <a href="https://mugawardwayup.marketing2advertising.com/contact-us/">
+        Contact Us
+      </a>
+
+      <a class="donate-link"
+         href="https://mugawardwayup.marketing2advertising.com/donate.html">
+        Donate
+      </a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+
+<main>
+
+<section class="donate-hero">
+
+  <div class="container">
+
+    <div class="hero-content reveal">
+
+      <span class="hero-label">
+        Support the work
+      </span>
+
+      <h1>
+        Help turn <span>connection</span> into opportunity.
+      </h1>
+
+      <p>
+        Your support helps Mugaward Way Up Foundation strengthen the links
+        between smallholder farmers, urban consumers and communities in Uganda.
+        Together, we can build practical systems that create opportunity,
+        dignity and stronger local livelihoods.
+      </p>
+
+      <div class="hero-actions">
+
+        <a
+          class="hero-btn primary"
+          href="#support">
+          Support Our Work →
+        </a>
+
+        <a
+          class="hero-btn secondary"
+          href="#impact">
+          See Where Support Goes
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     DONATION ACTION BAR
+     ========================================================= -->
+
+<section class="donation-strip">
+
+  <div class="container">
+
+    <div class="donation-panel reveal">
+
+      <div>
+
+        <span class="eyebrow">Make a difference</span>
+
+        <h2>Every contribution matters.</h2>
+
+        <p>
+          Choose a starting point or contact us about supporting a specific program.
+        </p>
+
+      </div>
+
+      <div class="donation-actions">
+
+        <a class="donation-option" href="#support">
+          Support
+        </a>
+
+        <a class="donation-option" href="#impact">
+          Community
+        </a>
+
+        <a class="donation-option" href="#programs">
+          Programs
+        </a>
+
+        <a class="donation-option custom" href="mailto:mugawardwayupfoundation@gmail.com">
+          Contact Us
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     COMMUNITY IMAGE / IMPACT
+     ========================================================= -->
+
+<section class="section section-white" id="impact">
+
+  <div class="container">
+
+    <div class="community-layout">
+
+      <div class="community-image reveal">
+
+        <!-- COMMUNITY IMAGE USED AS AN IMPACT VISUAL -->
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTgk7yNRY78Hf6eGJCY8w-07AzxwqeEj4XQprzAprt6XH35dz2Nbg0jqszT0GEY0bkPVPTgIiFyos6iOXNBgdbcVp3ihmf4Bo7QpXzJhPk_8Zcbr9zKj04oIO7wVsdYMUvD40fBey1QV5arfbG3etSbxZ3UxZNcVAvE6FnoOTS1F9bR7UB6YtYe7HBbK8G/s1600/images.png"
+          alt="Mugaward Way Up Foundation community">
+
+        <div class="community-badge">
+
+          <strong>People</strong>
+
+          <span>
+            Stronger communities are at the heart of our work.
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <div class="community-copy reveal">
+
+        <span class="eyebrow">
+          Why your support matters
+        </span>
+
+        <h2>
+          Build systems that connect people to opportunity.
+        </h2>
+
+        <p>
+          Mugaward Way Up Foundation is building a practical food ecosystem
+          where rural producers and urban consumers can participate in a more
+          connected local market.
+        </p>
+
+        <p>
+          Support helps strengthen the systems around that connection:
+          production, market access, consumer organization, skills, logistics
+          and responsible finance.
+        </p>
+
+        <ul class="check-list">
+
+          <li>
+            <span>✓</span>
+            <div>Stronger opportunities for smallholder farmers.</div>
+          </li>
+
+          <li>
+            <span>✓</span>
+            <div>Better connections between producers and consumers.</div>
+          </li>
+
+          <li>
+            <span>✓</span>
+            <div>Practical skills and enterprise opportunities.</div>
+          </li>
+
+          <li>
+            <span>✓</span>
+            <div>Inclusive approaches to finance and participation.</div>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     IMPACT AREAS
+     ========================================================= -->
+
+<section class="section section-soft">
+
+  <div class="container">
+
+    <div class="section-heading reveal">
+
+      <span class="eyebrow">Your support can strengthen</span>
+
+      <h2>
+        More than one part of the community.
+      </h2>
+
+      <p>
+        Our model is designed so that different forms of support can reinforce
+        different parts of the local livelihood ecosystem.
+      </p>
+
+    </div>
+
+
+    <div class="impact-grid">
+
+      <div class="impact-card reveal">
+
+        <div class="impact-icon">🌱</div>
+
+        <h3>Quality production</h3>
+
+        <p>
+          Support practical approaches that help smallholder farmers improve
+          production, quality, handling and market readiness.
+        </p>
+
+      </div>
+
+
+      <div class="impact-card reveal">
+
+        <div class="impact-icon">🤝</div>
+
+        <h3>Market connections</h3>
+
+        <p>
+          Help strengthen dependable relationships between producers,
+          households, institutions and urban buying communities.
+        </p>
+
+      </div>
+
+
+      <div class="impact-card reveal">
+
+        <div class="impact-icon">💡</div>
+
+        <h3>Opportunity & skills</h3>
+
+        <p>
+          Support practical enterprise, training and livelihood opportunities
+          that help people build productive pathways.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     HOW SUPPORT FITS THE MODEL
+     ========================================================= -->
+
+<section class="section section-white">
+
+  <div class="container">
+
+    <div class="model-layout">
+
+      <div class="model-intro reveal">
+
+        <span class="eyebrow">
+          Our approach
+        </span>
+
+        <h2>
+          One connected model. Multiple points of impact.
+        </h2>
+
+        <p>
+          We do not see rural farmers and urban consumers as separate audiences.
+          We see them as partners in one livelihood ecosystem.
+        </p>
+
+      </div>
+
+
+      <div class="model-steps">
+
+        <div class="model-step reveal">
+
+          <div class="step-number">01</div>
+
+          <div>
+
+            <h3>Strengthen production</h3>
+
+            <p>
+              Support farmers with practical production planning,
+              quality improvement and market readiness.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="model-step reveal">
+
+          <div class="step-number">02</div>
+
+          <div>
+
+            <h3>Connect demand</h3>
+
+            <p>
+              Build stronger pathways between producers and organized
+              urban consumers.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="model-step reveal">
+
+          <div class="step-number">03</div>
+
+          <div>
+
+            <h3>Support participation</h3>
+
+            <p>
+              Explore responsible finance and systems that allow both
+              sides of the market to participate consistently.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="model-step reveal">
+
+          <div class="step-number">04</div>
+
+          <div>
+
+            <h3>Grow through partnerships</h3>
+
+            <p>
+              Work with communities and partners to test, learn and
+              strengthen the model over time.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     PROGRAMS
+     ========================================================= -->
+
+<section class="section section-soft" id="programs">
+
+  <div class="container">
+
+    <div class="section-heading reveal">
+
+      <span class="eyebrow">
+        Programs
+      </span>
+
+      <h2>
+        Support the work across our programs.
+      </h2>
+
+      <p>
+        Explore the projects through which Mugaward Way Up Foundation
+        creates practical pathways for livelihoods, skills and opportunity.
+      </p>
+
+    </div>
+
+
+    <div class="program-grid">
+
+      <a
+        class="program-card reveal"
+        href="https://mugawardwayup.marketing2advertising.com/sustainable-farming-project.html">
+
+        <small>01</small>
+
+        <h3>
+          Sustainable Farming
+        </h3>
+
+        <span>
+          Food production & livelihoods →
+        </span>
+
+      </a>
+
+
+      <a
+        class="program-card reveal"
+        href="https://mugawardwayup.marketing2advertising.com/carpentry-joinery-training.html">
+
+        <small>02</small>
+
+        <h3>
+          Carpentry & Joinery
+        </h3>
+
+        <span>
+          Skills & practical training →
+        </span>
+
+      </a>
+
+
+      <a
+        class="program-card reveal"
+        href="https://mugawardwayup.marketing2advertising.com/street-vending-project.html">
+
+        <small>03</small>
+
+        <h3>
+          Street Vending
+        </h3>
+
+        <span>
+          Enterprise & opportunity →
+        </span>
+
+      </a>
+
+
+      <a
+        class="program-card reveal"
+        href="https://mugawardwayup.marketing2advertising.com/mugaward-micro-credit-project.html">
+
+        <small>04</small>
+
+        <h3>
+          Mugaward Micro Credit
+        </h3>
+
+        <span>
+          Inclusive finance →
+        </span>
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     SUPPORT CTA
+     ========================================================= -->
+
+<section class="support-section" id="support">
+
+  <div class="container">
+
+    <div class="support-box">
+
+      <div class="reveal">
+
+        <span class="eyebrow">
+          Support Mugaward
+        </span>
+
+        <h2>
+          Give support to work that starts with people.
+        </h2>
+
+        <p>
+          If you would like to support Mugaward Way Up Foundation,
+          contribute to a particular program or discuss a partnership,
+          get in touch with our team.
+        </p>
+
+      </div>
+
+
+      <div class="support-card reveal">
+
+        <h3>
+          Ready to support?
+        </h3>
+
+        <p>
+          Contact the foundation to discuss donations, program support,
+          partnerships or other ways to contribute.
+        </p>
+
+        <a
+          class="support-btn"
+          href="mailto:mugawardwayupfoundation@gmail.com">
+          Contact Us About Supporting →
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     QUOTE
+     ========================================================= -->
+
+<section class="quote-section">
+
+  <div class="container reveal">
+
+    <div class="quote-mark">
+      “
+    </div>
+
+    <blockquote>
+      The strongest version of this model is not only profitable.
+      It is trusted, inclusive and locally anchored.
+    </blockquote>
+
+    <p>
+      Mugaward Way Up Foundation
+    </p>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
+<footer class="site-footer">
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRLNo-rRcj2V7NP1GMLqS77PpmNB4puzQgYMstUaQVYiFfcn26Va0GYpROz3JMUGWtk7phZfahcxUDgIQPBumEgqKBfEtQYoeKB_H3J1xAsydaNptuZhA4dRYm0uOhiYR4ZZ2v7HZWp43BLnQK479_5tH-XAlgWUEQRplfFCsMEzSLqASgYVoXjXw2G7Go/s1600/images.png"
+          alt="Mugaward Way Up Foundation">
+
+        <p>
+          Mugaward Way Up Foundation is a Ugandan NGO building a fair food
+          ecosystem that directly connects smallholder farmers to urban
+          consumers by supporting quality production and organizing reliable demand.
+        </p>
+
+      </div>
+
+
+      <div class="footer-col">
+
+        <h3>Explore</h3>
+
+        <a href="https://mugawardwayup.marketing2advertising.com/about-us.html">
+          About us
+        </a>
+
+        <a href="https://mugawardwayup.marketing2advertising.com/our-programs.html">
+          Our programs
+        </a>
+
+        <a href="https://mugawardwayup.marketing2advertising.com/contact-us/">
+          Contact Us
+        </a>
+
+        <a href="https://mugawardwayup.marketing2advertising.com/donate.html">
+          Donate
+        </a>
+
+      </div>
+
+
+      <div class="footer-col">
+
+        <h3>Projects</h3>
+
+        <a href="https://mugawardwayup.marketing2advertising.com/sustainable-farming-project.html">
+          Sustainable Farming
+        </a>
+
+        <a href="https://mugawardwayup.marketing2advertising.com/carpentry-joinery-training.html">
+          Carpentry & Joinery
+        </a>
+
+        <a href="https://mugawardwayup.marketing2advertising.com/street-vending-project.html">
+          Street Vending
+        </a>
+
+        <a href="https://mugawardwayup.marketing2advertising.com/mugaward-micro-credit-project.html">
+          Micro Credit
+        </a>
+
+      </div>
+
+
+      <div class="footer-col">
+
+        <h3>Foundation</h3>
+
+        <a href="https://mugawardwayup.marketing2advertising.com/about-us.html">
+          Who we are
+        </a>
+
+        <a href="https://mugawardwayup.marketing2advertising.com/our-programs.html">
+          How our model works
+        </a>
+
+        <a href="#support">
+          Support our work
+        </a>
+
+        <a href="#top"
+           onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
+          Back to top ↑
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <span>
+        Copyright© 2026 Mugaward Way Up Foundation, All rights reserved.
+      </span>
+
+      <span>
+        mugawardwayup.org
+      </span>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- =========================================================
+     BACK TO TOP
+     ========================================================= -->
+
+<button
+  class="back-top"
+  id="backTop"
+  aria-label="Back to top">
+  ↑
+</button>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+     ========================================================= -->
+
+<script>
+(function(){
+
+  /* MOBILE MENU */
+  const menuBtn=document.getElementById('menuBtn');
+  const nav=document.getElementById('navlinks');
+
+  if(menuBtn && nav){
+
+    menuBtn.addEventListener('click',function(){
+
+      const open=nav.classList.toggle('open');
+
+      menuBtn.setAttribute(
+        'aria-expanded',
+        open ? 'true' : 'false'
+      );
+
+      menuBtn.textContent=open ? '×' : '☰';
+
+    });
+
+    nav.querySelectorAll('a').forEach(function(link){
+
+      link.addEventListener('click',function(){
+
+        nav.classList.remove('open');
+        menuBtn.textContent='☰';
+        menuBtn.setAttribute('aria-expanded','false');
+
+      });
+
+    });
+
+  }
+
+
+  /* REVEAL ANIMATIONS */
+  const items=document.querySelectorAll('.reveal');
+
+  if('IntersectionObserver' in window){
+
+    const observer=new IntersectionObserver(function(entries){
+
+      entries.forEach(function(entry){
+
+        if(entry.isIntersecting){
+
+          entry.target.classList.add('show');
+
+          observer.unobserve(entry.target);
+
+        }
+
+      });
+
+    },{
+      threshold:.12
+    });
+
+    items.forEach(function(item){
+      observer.observe(item);
+    });
+
+  }else{
+
+    items.forEach(function(item){
+      item.classList.add('show');
+    });
+
+  }
+
+
+  /* BACK TO TOP */
+  const backTop=document.getElementById('backTop');
+
+  window.addEventListener('scroll',function(){
+
+    if(window.scrollY>500){
+      backTop.classList.add('show');
+    }else{
+      backTop.classList.remove('show');
+    }
+
+  },{passive:true});
+
+
+  backTop.addEventListener('click',function(){
+
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    });
+
+  });
+
+})();
+</script>
+
+</body>
+</html>

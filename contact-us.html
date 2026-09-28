@@ -1,0 +1,1725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Mugaward Way Up Foundation</title>
+<meta name="description" content="Contact Mugaward Way Up Foundation to build stronger farmer-consumer partnerships and support practical food livelihoods in Uganda.">
+
+<style>
+/* =========================================================
+   MUGAWARD WAY UP FOUNDATION
+   CONTACT US — CLEAN FORM-FIRST DESIGN
+   ========================================================= */
+
+:root{
+  --green:#26bd21;
+  --green-dark:#123f32;
+  --green-deep:#0b2c25;
+  --ink:#182a2a;
+  --muted:#667574;
+  --cream:#f7f4ed;
+  --paper:#ffffff;
+  --soft:#eef5f1;
+  --line:rgba(18,63,50,.12);
+  --gold:#d9b56d;
+  --shadow:0 24px 70px rgba(15,48,40,.12);
+  --radius:24px;
+  --max:1180px;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:var(--cream);
+  color:var(--ink);
+  line-height:1.7;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+.container{
+  width:min(var(--max),calc(100% - 40px));
+  margin:auto;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(255,255,255,.96);
+  border-bottom:1px solid var(--line);
+  backdrop-filter:blur(14px);
+}
+
+.navbar{
+  min-height:82px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  flex-shrink:0;
+}
+
+.logo img{
+  width:145px;
+  height:auto;
+}
+
+.navlinks{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.navlinks a{
+  padding:11px 15px;
+  border-radius:12px;
+  color:var(--green-dark);
+  font-size:14px;
+  font-weight:700;
+  transition:.25s ease;
+}
+
+.navlinks a:hover{
+  background:var(--soft);
+  color:var(--green);
+}
+
+.navlinks .nav-donate{
+  background:var(--green-dark);
+  color:#fff;
+  padding:12px 19px;
+}
+
+.navlinks .nav-donate:hover{
+  background:var(--green);
+  color:#fff;
+}
+
+.menu-btn{
+  display:none;
+  border:0;
+  background:var(--green-dark);
+  color:#fff;
+  width:44px;
+  height:44px;
+  border-radius:12px;
+  font-size:23px;
+  cursor:pointer;
+}
+
+/* =========================================================
+   FORM-FIRST HERO / MESSAGE SECTION
+   ========================================================= */
+
+.contact-start{
+  padding:75px 0 90px;
+  background:
+    radial-gradient(circle at 92% 8%,rgba(38,189,33,.09),transparent 27%),
+    radial-gradient(circle at 8% 90%,rgba(18,63,50,.07),transparent 25%),
+    var(--cream);
+}
+
+.form-layout{
+  display:grid;
+  grid-template-columns:.88fr 1.12fr;
+  gap:28px;
+  align-items:stretch;
+}
+
+.form-intro{
+  min-height:650px;
+  padding:55px;
+  border-radius:30px;
+  background:
+    linear-gradient(145deg,rgba(38,189,33,.12),transparent 42%),
+    var(--green-deep);
+  color:#fff;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  position:relative;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+}
+
+.form-intro:after{
+  content:"";
+  position:absolute;
+  width:260px;
+  height:260px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:50%;
+  right:-100px;
+  bottom:-100px;
+}
+
+.form-intro:before{
+  content:"";
+  position:absolute;
+  width:130px;
+  height:130px;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:50%;
+  right:40px;
+  bottom:45px;
+}
+
+.form-label{
+  display:inline-block;
+  color:var(--green);
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:2.5px;
+  text-transform:uppercase;
+  margin-bottom:14px;
+}
+
+.form-intro h1{
+  font-size:clamp(38px,4.5vw,62px);
+  line-height:1.02;
+  letter-spacing:-2.5px;
+  margin:0 0 22px;
+  max-width:560px;
+}
+
+.form-intro p{
+  color:rgba(255,255,255,.78);
+  font-size:17px;
+  max-width:520px;
+  margin:0 0 28px;
+}
+
+.form-points{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:grid;
+  gap:13px;
+}
+
+.form-points li{
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  color:rgba(255,255,255,.88);
+  font-size:14px;
+}
+
+.form-points li span{
+  width:23px;
+  height:23px;
+  flex:0 0 23px;
+  border-radius:50%;
+  background:rgba(38,189,33,.16);
+  color:var(--green);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:900;
+  font-size:12px;
+}
+
+/* =========================================================
+   FORM CARD
+   ========================================================= */
+
+.contact-form-card{
+  min-height:650px;
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:30px;
+  padding:50px;
+  box-shadow:0 18px 55px rgba(15,48,40,.07);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.contact-form-card h2{
+  color:var(--green-dark);
+  font-size:clamp(34px,4vw,50px);
+  line-height:1.05;
+  letter-spacing:-1.7px;
+  margin:0 0 12px;
+}
+
+.form-description{
+  color:var(--muted);
+  margin:0 0 30px;
+  max-width:650px;
+}
+
+.form-group{
+  margin-bottom:20px;
+}
+
+.form-group label{
+  display:block;
+  margin-bottom:8px;
+  color:var(--green-dark);
+  font-size:13px;
+  font-weight:800;
+}
+
+.form-group input,
+.form-group textarea{
+  width:100%;
+  border:1px solid rgba(18,63,50,.16);
+  background:#fbfcfa;
+  color:var(--ink);
+  border-radius:13px;
+  padding:15px 16px;
+  font-family:inherit;
+  font-size:15px;
+  outline:none;
+  transition:.25s ease;
+}
+
+.form-group input{
+  height:52px;
+}
+
+.form-group textarea{
+  min-height:150px;
+  resize:vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+  border-color:var(--green);
+  background:#fff;
+  box-shadow:0 0 0 4px rgba(38,189,33,.08);
+}
+
+.submit-btn{
+  width:100%;
+  border:0;
+  border-radius:13px;
+  background:var(--green-dark);
+  color:#fff;
+  padding:16px 20px;
+  font-size:15px;
+  font-weight:800;
+  cursor:pointer;
+  transition:.25s ease;
+}
+
+.submit-btn:hover{
+  background:var(--green);
+  transform:translateY(-2px);
+}
+
+.form-note{
+  margin:13px 0 0;
+  color:#7a8785;
+  font-size:12px;
+  text-align:center;
+}
+
+/* =========================================================
+   SECTION COMMON
+   ========================================================= */
+
+.section{
+  padding:95px 0;
+}
+
+.section-soft{
+  background:var(--soft);
+}
+
+.section-white{
+  background:#fff;
+}
+
+.section-heading{
+  max-width:720px;
+  margin-bottom:45px;
+}
+
+.eyebrow{
+  display:inline-block;
+  color:var(--green);
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:2.5px;
+  text-transform:uppercase;
+  margin-bottom:12px;
+}
+
+.section-heading h2{
+  margin:0 0 14px;
+  color:var(--green-dark);
+  font-size:clamp(32px,4vw,50px);
+  line-height:1.08;
+  letter-spacing:-1.8px;
+}
+
+.section-heading p{
+  margin:0;
+  color:var(--muted);
+  font-size:17px;
+}
+
+/* =========================================================
+   CONTACT DETAILS
+   ========================================================= */
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.contact-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:30px;
+  transition:.3s ease;
+}
+
+.contact-card:hover{
+  transform:translateY(-5px);
+  box-shadow:var(--shadow);
+}
+
+.contact-icon{
+  width:48px;
+  height:48px;
+  border-radius:14px;
+  background:var(--soft);
+  color:var(--green-dark);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:21px;
+  margin-bottom:20px;
+}
+
+.contact-card h3{
+  color:var(--green-dark);
+  margin:0 0 8px;
+  font-size:20px;
+}
+
+.contact-card p{
+  color:var(--muted);
+  margin:0;
+  font-size:14px;
+}
+
+.contact-card a{
+  color:var(--green-dark);
+  font-weight:700;
+}
+
+.contact-card a:hover{
+  color:var(--green);
+}
+
+/* =========================================================
+   WHY CONTACT
+   ========================================================= */
+
+.split-section{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:60px;
+  align-items:center;
+}
+
+.big-number{
+  font-size:clamp(70px,10vw,130px);
+  font-weight:900;
+  line-height:.8;
+  color:rgba(38,189,33,.14);
+  letter-spacing:-8px;
+  margin-bottom:25px;
+}
+
+.split-section h2{
+  margin:0 0 18px;
+  color:var(--green-dark);
+  font-size:clamp(34px,4vw,52px);
+  line-height:1.05;
+  letter-spacing:-1.8px;
+}
+
+.split-section p{
+  color:var(--muted);
+  margin:0 0 18px;
+}
+
+.reason-list{
+  display:grid;
+  gap:16px;
+}
+
+.reason{
+  padding:22px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:18px;
+}
+
+.reason strong{
+  display:block;
+  color:var(--green-dark);
+  margin-bottom:4px;
+}
+
+.reason span{
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* =========================================================
+   PROCESS
+   ========================================================= */
+
+.process-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+
+.process-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:28px;
+  position:relative;
+}
+
+.process-number{
+  font-size:13px;
+  font-weight:900;
+  color:var(--green);
+  letter-spacing:1px;
+  margin-bottom:30px;
+}
+
+.process-card h3{
+  margin:0 0 10px;
+  color:var(--green-dark);
+  font-size:19px;
+}
+
+.process-card p{
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* =========================================================
+   PROGRAMS
+   ========================================================= */
+
+.program-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+
+.program-card{
+  background:var(--green-deep);
+  color:#fff;
+  border-radius:22px;
+  padding:27px;
+  min-height:230px;
+  display:flex;
+  flex-direction:column;
+  transition:.3s ease;
+}
+
+.program-card:hover{
+  transform:translateY(-6px);
+  background:var(--green-dark);
+  box-shadow:var(--shadow);
+}
+
+.program-card small{
+  color:var(--green);
+  font-weight:900;
+  letter-spacing:1px;
+  margin-bottom:auto;
+}
+
+.program-card h3{
+  font-size:19px;
+  line-height:1.2;
+  margin:35px 0 8px;
+}
+
+.program-card span{
+  color:rgba(255,255,255,.65);
+  font-size:13px;
+}
+
+/* =========================================================
+   QUOTE
+   ========================================================= */
+
+.quote-section{
+  padding:100px 0;
+  background:var(--green-dark);
+  color:#fff;
+  text-align:center;
+}
+
+.quote-section .quote-mark{
+  font-size:60px;
+  color:var(--green);
+  line-height:1;
+}
+
+.quote-section blockquote{
+  max-width:850px;
+  margin:15px auto 20px;
+  font-size:clamp(27px,4vw,46px);
+  line-height:1.15;
+  letter-spacing:-1.2px;
+  font-weight:700;
+}
+
+.quote-section p{
+  color:rgba(255,255,255,.65);
+  margin:0;
+}
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.cta{
+  padding:85px 0;
+  background:
+    radial-gradient(circle at 80% 20%,rgba(38,189,33,.12),transparent 28%),
+    var(--cream);
+}
+
+.cta-box{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:30px;
+  padding:55px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:35px;
+  box-shadow:0 18px 55px rgba(15,48,40,.06);
+}
+
+.cta-box h2{
+  margin:0 0 10px;
+  color:var(--green-dark);
+  font-size:clamp(30px,4vw,45px);
+  line-height:1.05;
+  letter-spacing:-1.5px;
+}
+
+.cta-box p{
+  margin:0;
+  color:var(--muted);
+  max-width:680px;
+}
+
+.cta-buttons{
+  display:flex;
+  gap:10px;
+  flex-shrink:0;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:14px 21px;
+  border-radius:12px;
+  font-weight:800;
+  font-size:14px;
+  transition:.25s ease;
+}
+
+.btn-primary{
+  background:var(--green-dark);
+  color:#fff;
+}
+
+.btn-primary:hover{
+  background:var(--green);
+  transform:translateY(-2px);
+}
+
+.btn-secondary{
+  background:var(--soft);
+  color:var(--green-dark);
+}
+
+.btn-secondary:hover{
+  background:#dfece5;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.site-footer{
+  background:#09251f;
+  color:#fff;
+  padding:70px 0 25px;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:1.6fr 1fr 1fr 1fr;
+  gap:45px;
+  padding-bottom:50px;
+  border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.footer-brand img{
+  width:145px;
+  margin-bottom:20px;
+  filter:brightness(0) invert(1);
+}
+
+.footer-brand p{
+  color:rgba(255,255,255,.63);
+  font-size:13px;
+  max-width:390px;
+  margin:0;
+}
+
+.footer-col h3{
+  margin:0 0 17px;
+  font-size:14px;
+  color:#fff;
+}
+
+.footer-col a{
+  display:block;
+  color:rgba(255,255,255,.6);
+  font-size:13px;
+  margin-bottom:9px;
+  transition:.2s ease;
+}
+
+.footer-col a:hover{
+  color:var(--green);
+}
+
+.footer-bottom{
+  padding-top:25px;
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  color:rgba(255,255,255,.45);
+  font-size:12px;
+}
+
+/* =========================================================
+   BACK TO TOP
+   ========================================================= */
+
+.back-top{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  width:45px;
+  height:45px;
+  border:0;
+  border-radius:13px;
+  background:var(--green-dark);
+  color:#fff;
+  font-size:18px;
+  cursor:pointer;
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(10px);
+  transition:.3s ease;
+  z-index:999;
+}
+
+.back-top.show{
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0);
+}
+
+.back-top:hover{
+  background:var(--green);
+}
+
+/* =========================================================
+   REVEAL
+   ========================================================= */
+
+.reveal{
+  opacity:0;
+  transform:translateY(25px);
+  transition:opacity .7s ease,transform .7s ease;
+}
+
+.reveal.show{
+  opacity:1;
+  transform:none;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media(max-width:1000px){
+
+  .navlinks{
+    gap:2px;
+  }
+
+  .navlinks a{
+    padding:9px 10px;
+    font-size:13px;
+  }
+
+  .form-layout,
+  .split-section{
+    grid-template-columns:1fr;
+  }
+
+  .form-intro,
+  .contact-form-card{
+    min-height:auto;
+  }
+
+  .form-intro{
+    padding:45px;
+  }
+
+  .contact-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .process-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .program-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .footer-grid{
+    grid-template-columns:1.5fr 1fr 1fr;
+  }
+}
+
+@media(max-width:760px){
+
+  .container{
+    width:min(var(--max),calc(100% - 28px));
+  }
+
+  .navbar{
+    min-height:72px;
+  }
+
+  .logo img{
+    width:125px;
+  }
+
+  .menu-btn{
+    display:block;
+  }
+
+  .navlinks{
+    position:absolute;
+    top:72px;
+    left:14px;
+    right:14px;
+    display:none;
+    flex-direction:column;
+    align-items:stretch;
+    gap:4px;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:18px;
+    padding:10px;
+    box-shadow:0 20px 45px rgba(15,48,40,.12);
+  }
+
+  .navlinks.open{
+    display:flex;
+  }
+
+  .navlinks a{
+    padding:13px 14px;
+  }
+
+  .contact-start{
+    padding:45px 0 55px;
+  }
+
+  .form-intro{
+    padding:34px 27px;
+    border-radius:22px;
+  }
+
+  .contact-form-card{
+    padding:32px 25px;
+    border-radius:22px;
+  }
+
+  .section{
+    padding:70px 0;
+  }
+
+  .contact-grid,
+  .process-grid,
+  .program-grid{
+    grid-template-columns:1fr;
+  }
+
+  .cta-box{
+    padding:35px 25px;
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .cta-buttons{
+    width:100%;
+    flex-direction:column;
+  }
+
+  .cta-buttons .btn{
+    width:100%;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr 1fr;
+    gap:35px 25px;
+  }
+
+  .footer-brand{
+    grid-column:1/-1;
+  }
+
+  .footer-bottom{
+    flex-direction:column;
+    gap:8px;
+  }
+}
+
+@media(max-width:480px){
+
+  .form-intro h1{
+    font-size:39px;
+  }
+
+  .contact-form-card h2{
+    font-size:34px;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+
+  .footer-brand{
+    grid-column:auto;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- =========================================================
+     HEADER
+     ========================================================= -->
+
+<header class="site-header">
+  <div class="container navbar">
+
+    <a class="logo" href="https://mugawardwayup.marketing2advertising.com/">
+      <img
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRLNo-rRcj2V7NP1GMLqS77PpmNB4puzQgYMstUaQVYiFfcn26Va0GYpROz3JMUGWtk7phZfahcxUDgIQPBumEgqKBfEtQYoeKB_H3J1xAsydaNptuZhA4dRYm0uOhiYR4ZZ2v7HZWp43BLnQK479_5tH-XAlgWUEQRplfFCsMEzSLqASgYVoXjXw2G7Go/s1600/images.png"
+        alt="Mugaward Way Up Foundation">
+    </a>
+
+    <button
+      class="menu-btn"
+      id="menuBtn"
+      aria-label="Open menu"
+      aria-expanded="false">
+      ☰
+    </button>
+
+    <nav class="navlinks" id="navlinks">
+      <a href="https://mugawardwayup.marketing2advertising.com/">Home</a>
+      <a href="https://mugawardwayup.marketing2advertising.com/about-us.html">About us</a>
+      <a href="https://mugawardwayup.marketing2advertising.com/our-programs.html">Our programs</a>
+      <a href="https://mugawardwayup.marketing2advertising.com/contact-us/">Contact Us</a>
+      <a class="nav-donate" href="https://mugawardwayup.marketing2advertising.com/donate.html">Donate</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<!-- =========================================================
+     SEND US A MESSAGE — FIRST MAIN SECTION
+     ========================================================= -->
+
+<main>
+
+<section class="contact-start">
+  <div class="container">
+
+    <div class="form-layout">
+
+      <!-- LEFT INTRO -->
+      <div class="form-intro reveal">
+
+        <span class="form-label">Start a conversation</span>
+
+        <h1>
+          Let’s build stronger farmer-consumer partnerships together.
+        </h1>
+
+        <p>
+          Whether you are a farmer group, consumer network, school, church,
+          development partner, local leader or impact investor, we would love
+          to hear from you.
+        </p>
+
+        <ul class="form-points">
+          <li>
+            <span>✓</span>
+            <div>Organize producers and strengthen local livelihoods.</div>
+          </li>
+
+          <li>
+            <span>✓</span>
+            <div>Connect farmers with dependable urban demand.</div>
+          </li>
+
+          <li>
+            <span>✓</span>
+            <div>Support practical finance and inclusive market systems.</div>
+          </li>
+
+          <li>
+            <span>✓</span>
+            <div>Improve logistics, partnerships and opportunities for growth.</div>
+          </li>
+        </ul>
+
+      </div>
+
+
+      <!-- FORM -->
+      <div class="contact-form-card reveal">
+
+        <span class="form-label">Send us a message</span>
+
+        <h2>How can we work together?</h2>
+
+        <p class="form-description">
+          Tell us a little about yourself, your organization or your idea.
+          We welcome practical conversations that can lead to meaningful action.
+        </p>
+
+        <form
+          action="https://formsubmit.co/lisathahanel@gmail.com"
+          method="POST">
+
+          <input
+            name="_captcha"
+            type="hidden"
+            value="false">
+
+          <input
+            name="_subject"
+            type="hidden"
+            value="New Contact Message - Mugaward Way Up Foundation">
+
+          <input
+            name="_template"
+            type="hidden"
+            value="table">
+
+          <div class="form-group">
+            <label for="mugaward-name">Your Name</label>
+            <input
+              id="mugaward-name"
+              name="Name"
+              type="text"
+              placeholder="Enter your name"
+              required>
+          </div>
+
+          <div class="form-group">
+            <label for="mugaward-email">Your Email</label>
+            <input
+              id="mugaward-email"
+              name="Email"
+              type="email"
+              placeholder="Enter your email address"
+              required>
+          </div>
+
+          <div class="form-group">
+            <label for="mugaward-message">Your Message</label>
+            <textarea
+              id="mugaward-message"
+              name="Message"
+              rows="6"
+              placeholder="Tell us how you would like to work with Mugaward Way Up Foundation..."
+              required></textarea>
+          </div>
+
+          <!-- HONEYPOT -->
+          <input
+            name="_honey"
+            type="text"
+            style="display:none">
+
+          <button class="submit-btn" type="submit">
+            Send Message →
+          </button>
+
+          <p class="form-note">
+            We value respectful, practical and community-focused partnerships.
+          </p>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================================================
+     CONTACT DETAILS
+     ========================================================= -->
+
+<section class="section section-white">
+  <div class="container">
+
+    <div class="section-heading reveal">
+      <span class="eyebrow">Contact information</span>
+
+      <h2>
+        We are open to practical conversations.
+      </h2>
+
+      <p>
+        Reach out to Mugaward Way Up Foundation through the contact
+        details below.
+      </p>
+    </div>
+
+
+    <div class="contact-grid">
+
+      <div class="contact-card reveal">
+        <div class="contact-icon">⌖</div>
+
+        <h3>Visit our office</h3>
+
+        <p>
+          Kanyanya Opposite Lake Oil Komamboga<br>
+          P.O. Box Kampala GPO<br>
+          Kampala City, Uganda
+        </p>
+      </div>
+
+
+      <div class="contact-card reveal">
+        <div class="contact-icon">✉</div>
+
+        <h3>Mail Us</h3>
+
+        <p>
+          <a href="mailto:mugawardwayupfoundation@gmail.com">
+            mugawardwayupfoundation@gmail.com
+          </a>
+        </p>
+      </div>
+
+
+      <div class="contact-card reveal">
+        <div class="contact-icon">◷</div>
+
+        <h3>Call Us</h3>
+
+        <p>
+          Mon - Fri<br>
+          9.am to 6pm
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================================================
+     WHY CONTACT US
+     ========================================================= -->
+
+<section class="section section-soft">
+
+  <div class="container">
+
+    <div class="split-section">
+
+      <div class="reveal">
+
+        <div class="big-number">01</div>
+
+        <span class="eyebrow">Why connect with us?</span>
+
+        <h2>
+          We prefer practical conversations that lead to action.
+        </h2>
+
+        <p>
+          Mugaward Way Up Foundation is building a practical food livelihoods
+          model that grows through collaboration.
+        </p>
+
+        <p>
+          The best partnerships are those that respect local communities,
+          invest in capability and create systems that can stand beyond a
+          single funding cycle.
+        </p>
+
+      </div>
+
+
+      <div class="reason-list">
+
+        <div class="reason reveal">
+          <strong>Organize producers</strong>
+          <span>
+            Help strengthen farmer groups, production systems and market readiness.
+          </span>
+        </div>
+
+        <div class="reason reveal">
+          <strong>Mobilize consumers</strong>
+          <span>
+            Build stronger connections between urban consumers and local producers.
+          </span>
+        </div>
+
+        <div class="reason reveal">
+          <strong>Strengthen finance</strong>
+          <span>
+            Explore responsible financial tools that support participation in the food chain.
+          </span>
+        </div>
+
+        <div class="reason reveal">
+          <strong>Support scaling</strong>
+          <span>
+            Contribute to logistics, partnerships, systems and long-term growth.
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     HOW OUR MODEL WORKS
+     ========================================================= -->
+
+<section class="section section-white">
+
+  <div class="container">
+
+    <div class="section-heading reveal">
+
+      <span class="eyebrow">How our model works</span>
+
+      <h2>
+        Connecting production, demand and opportunity.
+      </h2>
+
+      <p>
+        Our approach brings different parts of the food ecosystem together
+        so that producers and consumers can participate in a stronger local market.
+      </p>
+
+    </div>
+
+
+    <div class="process-grid">
+
+      <div class="process-card reveal">
+        <div class="process-number">01</div>
+
+        <h3>Producer organization</h3>
+
+        <p>
+          Strengthen farmer groups, production planning and local coordination.
+        </p>
+      </div>
+
+
+      <div class="process-card reveal">
+        <div class="process-number">02</div>
+
+        <h3>Quality & aggregation</h3>
+
+        <p>
+          Improve handling, quality, aggregation and readiness for reliable markets.
+        </p>
+      </div>
+
+
+      <div class="process-card reveal">
+        <div class="process-number">03</div>
+
+        <h3>Consumer mobilization</h3>
+
+        <p>
+          Build dependable urban demand through organized consumer connections.
+        </p>
+      </div>
+
+
+      <div class="process-card reveal">
+        <div class="process-number">04</div>
+
+        <h3>Finance & delivery</h3>
+
+        <p>
+          Support participation through responsible finance and practical market systems.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     PROGRAMS
+     ========================================================= -->
+
+<section class="section section-soft">
+
+  <div class="container">
+
+    <div class="section-heading reveal">
+
+      <span class="eyebrow">Our programs</span>
+
+      <h2>
+        Explore the work behind the model.
+      </h2>
+
+      <p>
+        Our projects create practical pathways for livelihoods, skills,
+        enterprise and inclusive opportunity.
+      </p>
+
+    </div>
+
+
+    <div class="program-grid">
+
+      <a
+        class="program-card reveal"
+        href="https://mugawardwayup.marketing2advertising.com/sustainable-farming-project.html">
+
+        <small>01</small>
+
+        <h3>Sustainable Farming</h3>
+
+        <span>Production & food livelihoods →</span>
+
+      </a>
+
+
+      <a
+        class="program-card reveal"
+        href="https://mugawardwayup.marketing2advertising.com/carpentry-joinery-training.html">
+
+        <small>02</small>
+
+        <h3>Carpentry & Joinery</h3>
+
+        <span>Skills & practical training →</span>
+
+      </a>
+
+
+      <a
+        class="program-card reveal"
+        href="https://mugawardwayup.marketing2advertising.com/street-vending-project.html">
+
+        <small>03</small>
+
+        <h3>Street Vending</h3>
+
+        <span>Enterprise & opportunity →</span>
+
+      </a>
+
+
+      <a
+        class="program-card reveal"
+        href="https://mugawardwayup.marketing2advertising.com/mugaward-micro-credit-project.html">
+
+        <small>04</small>
+
+        <h3>Micro Credit</h3>
+
+        <span>Inclusive finance →</span>
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     QUOTE
+     ========================================================= -->
+
+<section class="quote-section">
+
+  <div class="container reveal">
+
+    <div class="quote-mark">“</div>
+
+    <blockquote>
+      The strongest version of this model is not only profitable.
+      It is trusted, inclusive and locally anchored.
+    </blockquote>
+
+    <p>
+      Mugaward Way Up Foundation
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     CTA
+     ========================================================= -->
+
+<section class="cta">
+
+  <div class="container">
+
+    <div class="cta-box reveal">
+
+      <div>
+
+        <span class="eyebrow">Work with us</span>
+
+        <h2>
+          Help build a stronger local food ecosystem.
+        </h2>
+
+        <p>
+          Whether you want to collaborate, support a program, contribute
+          resources or explore a partnership, there is a place for practical
+          action.
+        </p>
+
+      </div>
+
+      <div class="cta-buttons">
+
+        <a
+          class="btn btn-primary"
+          href="https://mugawardwayup.marketing2advertising.com/donate.html">
+          Support Our Work
+        </a>
+
+        <a
+          class="btn btn-secondary"
+          href="mailto:mugawardwayupfoundation@gmail.com">
+          Email Us
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
+<footer class="site-footer">
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRLNo-rRcj2V7NP1GMLqS77PpmNB4puzQgYMstUaQVYiFfcn26Va0GYpROz3JMUGWtk7phZfahcxUDgIQPBumEgqKBfEtQYoeKB_H3J1xAsydaNptuZhA4dRYm0uOhiYR4ZZ2v7HZWp43BLnQK479_5tH-XAlgWUEQRplfFCsMEzSLqASgYVoXjXw2G7Go/s1600/images.png"
+          alt="Mugaward Way Up Foundation">
+
+        <p>
+          Mugaward Way Up Foundation is a Ugandan NGO building a fair food
+          ecosystem that directly connects smallholder farmers to urban
+          consumers by supporting quality production and organizing reliable demand.
+        </p>
+
+      </div>
+
+
+      <div class="footer-col">
+
+        <h3>Explore</h3>
+
+        <a href="https://mugawardwayup.marketing2advertising.com/about-us.html">
+          About us
+        </a>
+
+        <a href="https://mugawardwayup.marketing2advertising.com/our-programs.html">
+          Our programs
+        </a>
+
+        <a href="https://mugawardwayup.marketing2advertising.com/contact-us/">
+          Contact Us
+        </a>
+
+        <a href="https://mugawardwayup.marketing2advertising.com/donate.html">
+          Donate
+        </a>
+
+      </div>
+
+
+      <div class="footer-col">
+
+        <h3>Projects</h3>
+
+        <a href="https://mugawardwayup.marketing2advertising.com/sustainable-farming-project.html">
+          Sustainable Farming
+        </a>
+
+        <a href="https://mugawardwayup.marketing2advertising.com/carpentry-joinery-training.html">
+          Carpentry & Joinery
+        </a>
+
+        <a href="https://mugawardwayup.marketing2advertising.com/street-vending-project.html">
+          Street Vending
+        </a>
+
+        <a href="https://mugawardwayup.marketing2advertising.com/mugaward-micro-credit-project.html">
+          Micro Credit
+        </a>
+
+      </div>
+
+
+      <div class="footer-col">
+
+        <h3>Foundation</h3>
+
+        <a href="https://mugawardwayup.marketing2advertising.com/about-us.html">
+          Who we are
+        </a>
+
+        <a href="https://mugawardwayup.marketing2advertising.com/our-programs.html">
+          How our model works
+        </a>
+
+        <a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
+          Back to top ↑
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <span>
+        Copyright© 2026 Mugaward Way Up Foundation, All rights reserved.
+      </span>
+
+      <span>
+        mugawardwayup.org
+      </span>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- =========================================================
+     BACK TO TOP
+     ========================================================= -->
+
+<button
+  class="back-top"
+  id="backTop"
+  aria-label="Back to top">
+  ↑
+</button>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+     ========================================================= -->
+
+<script>
+(function(){
+
+  /* MOBILE MENU */
+  const menuBtn = document.getElementById('menuBtn');
+  const nav = document.getElementById('navlinks');
+
+  if(menuBtn && nav){
+
+    menuBtn.addEventListener('click',function(){
+
+      const open = nav.classList.toggle('open');
+
+      menuBtn.setAttribute('aria-expanded',open ? 'true' : 'false');
+      menuBtn.textContent = open ? '×' : '☰';
+
+    });
+
+    nav.querySelectorAll('a').forEach(function(link){
+
+      link.addEventListener('click',function(){
+
+        nav.classList.remove('open');
+        menuBtn.textContent = '☰';
+        menuBtn.setAttribute('aria-expanded','false');
+
+      });
+
+    });
+
+  }
+
+
+  /* REVEAL ANIMATIONS */
+  const revealItems = document.querySelectorAll('.reveal');
+
+  if('IntersectionObserver' in window){
+
+    const observer = new IntersectionObserver(function(entries){
+
+      entries.forEach(function(entry){
+
+        if(entry.isIntersecting){
+
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target);
+
+        }
+
+      });
+
+    },{
+      threshold:.12
+    });
+
+    revealItems.forEach(function(item){
+      observer.observe(item);
+    });
+
+  }else{
+
+    revealItems.forEach(function(item){
+      item.classList.add('show');
+    });
+
+  }
+
+
+  /* BACK TO TOP */
+  const backTop = document.getElementById('backTop');
+
+  window.addEventListener('scroll',function(){
+
+    if(window.scrollY > 500){
+      backTop.classList.add('show');
+    }else{
+      backTop.classList.remove('show');
+    }
+
+  },{passive:true});
+
+
+  backTop.addEventListener('click',function(){
+
+    window.scrollTo({
+      top:0,
+      behavior:'smooth'
+    });
+
+  });
+
+})();
+</script>
+
+</body>
+</html>
